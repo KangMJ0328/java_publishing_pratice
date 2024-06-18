@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.특정 인덱스에 저장된 데이터 출력
+        var name1 = new Array(); //name은 대표적인 예약어 변수로 쓸 수 없다.
+        name1[0] ="김부자";
+        name1[1] ="정현철";
+        name1[2] ="정주영";
+        name1[3] ="김민경";
+        name1[4] ="장영주";
+        document.write(name1[3]+"<br/>");
+
+        //오늘의 요일 알아보기
+        var days = new Array("일","월","화","수","목","금","토");
+        var today = new Date();
+        var yoil = days[today.getDay()]; //days[4]
+        // 오늘의 요일에 해당하는 값을 반환 일:0~ 토:6
+        document.write(yoil+"요일 <br/>"); //오늘의 요일 반환
+
+        //3. 전체 재산의 합 구하기
+        var total = 0;
+        var money = [100,100,200,50];
+        var theLen = money.length;//개수를 구한다.
+        for(var i=0;i<theLen;i++){ //0부터 4보다 작을때까지 1씩 증가
+            total = total + money[i];
+        }
+        document.write(total);
+        
+    </script>
+</body>
+</html>

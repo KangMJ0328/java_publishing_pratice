@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function repeat(count,callBack){
+            for(let idx = 0; idx < count; idx++){
+                callBack(idx+1);
+            }
+            
+        }
+       function orgin(count){
+            document.write(count)
+       };
+       function double(count){
+            document.write(count*2)
+       };
+        repeat(5,orgin);
+        repeat(5,double);
+        //1. 매개변수를 화면에 출력하는 함수 orgin을 만듭니다.
+        //2. 함수 repeat를 호출하고 인수로 5와 함수 orgin을 전달합니다.
+        //3. 함수 repeat가 호출되면 매개변수 count에는 숫자5를 저장하고 
+        //callBack에는 함수 orgin을 저장합니다.
+        //4. 0부터 4까지 총 5회 반복할 때 마다 매개변수 callBack에 저장한 함수 
+        //orgin을 호출하고 idx+1을 인수로 전달합니다.
+        // 따라서 함수 orgin은 함수 repeat의 반복문에서 총 5회 호출되면서 
+        //숫자 1부터 5까지 콘솔에 출력합니다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

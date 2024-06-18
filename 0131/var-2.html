@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+			padding-top:20px;
+			text-align:center;
+		}
+    </style>
+</head>
+<body>
+    <script>
+    var multi;
+    function addNumber() { 								
+			var sum = 10 + 20;			// 지역 변수
+             multi = 10 * 20;        // 전역 변수
+		}
+    addNumber();
+    console.log(multi);
+    </script>
+</body>
+</html>

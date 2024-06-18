@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+<style>
+    *{margin: 0;padding: 0;}
+    body{margin: 20px;}
+    #wrap{background-color: #ccc;padding: 20px;}
+    p{background-color: #999;}
+</style>
+<script>
+    $(function(){
+        $('#wrap').mouseout(function(){ //mouseout은 wrap만떠나면 mouseout됐다고 생각해서 함수가 실행이됨. 한마디로 자식그딴거없음 독신주의
+            $('p').css('border',"2px dashed red");
+        });
+        // mouseleave는 #wrap안의 영역을떠났을때 이벤트동작 (#wrap 안에 p태그 포함)
+        // mouseleave는 자식 다 포함시킴
+    });
+</script>
+</head>
+<body>
+    <div id="wrap">
+        <p>내용</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{margin: 0;padding:0;}
+.bigbox{
+    width: 1000px;
+    margin: 0 auto;
+    height:220px;
+    border: 5px solid tan;
+}
+.bigbox h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.box{
+    width:200px;
+    height:150px;
+    border: 3px solid tan;
+    float: left;
+    margin-left: 33px;
+}
+.box img{
+    display: block;
+    width: 100%;
+    height:100%;
+}
+
+.abigbox{
+    width: 1000px;
+    margin: 0 auto;
+    height:220px;
+    border: 5px solid tan;
+}
+.abigbox h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.abox{
+    width:200px;
+    height:150px;
+    border: 3px solid tan;
+    float: left;
+    margin-left: 33px;
+    overflow: hidden;
+}
+
+.abox img{
+transition: all 0.5s;
+}
+.abox:hover img{
+    margin-top: -150px;
+}
+
+.bbigbox{
+    width: 1000px;
+    margin: 0 auto;
+    height:220px;
+    border: 5px solid tan;
+}
+.bbigbox h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.bbox{
+    width:200px;
+    height:150px;
+    border: 3px solid tan;
+    float: left;
+    margin-left: 33px;
+    transition: all 0.3s;
+}
+.bbox:hover{
+    background-position: 0 -150px;
+}
+.bbox1{
+    background: url(../images/c1.jpg) no-repeat 0 0;
+    /* transition: all 0.5s; */
+}
+.bbox1:hover{
+    /* background: url(../images/c1.jpg) no-repeat 0 -150px; */
+}
+
+
+.bbox2{
+    background: url(../images/c2.jpg) no-repeat 0 0;
+    /* transition: all 0.5s; */
+}
+.bbox2:hover{
+    /* background: url(../images/c2.jpg) no-repeat 0 -150px; */
+}
+.bbox3{
+    background: url(../images/c3.jpg) no-repeat 0 0;
+}
+.bbox4{
+    background: url(../images/c4.jpg) no-repeat 0 0;
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa|Gloria+Hallelujah|Indie+Flower|Monoton|Play);
+/*reset css*/
+*{margin:0; padding:0;}
+ol,ul{list-style:none;}
+a{outline:0; text-decoration:none; color:#bbb;}
+img{border:0;}	
+/*풀스크린으로 동작하도록 지정(가로 세로 스크롤바 제거)*/
+body{position:fixed; width:100%; height:100%; background:#111;
+font-family: 'Amatic SC';}
+/*동영상(.vid)스타일*/
+.vid{width:100%; height:100%; position:fixed; opacity:0.8; left:0; top:-60px;}
+.vid video{width:100%; min-width:1600px;}
+
+
+h1{position:fixed; top:40px; left:40px; z-index:10;}
+h1 img{width:280px; height:auto;}
+
+/*캐릭터 메뉴*/
+#char_wrap{width:100%; position:absolute; left:50%; margin-left:-790px; bottom:0; 
+					z-index:999;}
+					
+#char_wrap .char>ul>li{float:left;position:relative;width:14%;
+}
+#char_wrap .char ul li a img{ transform:rotateY(0deg); transition:all 0.7s;}
+#char_wrap .char ul li a img:hover{transform:rotateY(360deg);}
+#char_wrap .char ul li a img{display:block;}
+
+#char_wrap .char ul li ul li a{transition:all 0.5s;}
+#char_wrap .char ul li ul li a:hover{color:#abcdef; transform:scale(1.2);}
+#char_wrap .char ul li ul li .th:hover{color:orange;}
+#char_wrap:hover .char{left:700px;}
+
+
+/*캐릭터 하단메뉴*/
+.char>ul>li>ul{display:none;  width:220px; position:absolute; bottom:280px;
+text-align:center;}
+.char>ul>li:hover>ul{display:block; width:220px;position:absolute;  left:0;}
+.char>ul>li>ul>li>a{display:block; color:#FFF; font-size:25px; line-height:30px; }
+
+.char>ul>li>ul>li>.th{color:#F0C131; font-size:35px; font-family: 'Amatic SC', cursive ,맑은 고딕; margin-bottom:15px;
+}
+
+
+
+
+
+/*바 효과*/
+.navbar a{display:block; width:225px; height:25px; line-height:25px; 
+background-color:#F0C131;
+font-family:play; color:#FFF; text-align:center; font-weight:bold;
+position:absolute; bottom:0px;
+float:left; transition:all 0.7s; font-family: 'Amatic SC', cursive; font-size:20px;}
+.navbar a:hover{color:#000;}
+
+.navbar{left:-14%; transition:all 0.7s ease-in-out;}
+.char ul li:nth-child(1):hover~.navbar a:nth-child(1){left:0;}
+.char ul li:nth-child(2):hover~.navbar a:nth-child(2){left:225px;}
+.char ul li:nth-child(3):hover~.navbar a:nth-child(3){left:450px;}
+.char ul li:nth-child(4):hover~.navbar a:nth-child(4){left:675px;}
+.char ul li:nth-child(5):hover~.navbar a:nth-child(5){left:900px;}
+.char ul li:nth-child(6):hover~.navbar a:nth-child(6){left:1125px;}
+.char ul li:nth-child(7):hover~.navbar a:nth-child(7){left:1350px;}
+
+/*롤링버튼 애니메이션 적용*/
+.btn{width:150px; height:50px; position:absolute; top:100px;
+right:0px; color:#b9fb05;}
+
+.btn i{font-size:60px; position:absolute; top:0; right:0; opacity:1;}
+
+.btn:hover{right:200px;}
+
+.btn i:nth-child(1){animation:ani linear 1.5s 0s infinite;}
+.btn i:nth-child(2){animation:ani linear 1.5s 0.5s infinite;}
+.btn i:nth-child(3){animation:ani linear 1.5s 1s infinite;}
+
+/*키프레임 생성*/
+@keyframes ani{0%{right:0; transform:scale(1); opacity:1;} 
+					100%{right:100px; transform:scale(1.5); opacity:0;}}
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

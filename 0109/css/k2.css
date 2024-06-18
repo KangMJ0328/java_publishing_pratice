@@ -1,0 +1,175 @@
+*{margin: 0;padding:0;}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color:#333;
+}
+#wrap{
+    width:1640px;
+    height:2000px;
+   
+    margin: 0 auto;
+}
+.snav{
+    margin-top: 20px;
+    width: 100%;
+    height:50px;
+    border:1px solid #333;
+    box-sizing: border-box;
+    /* 1638, 높이48 */
+}
+.snav ul{
+    width: 100%;/*1638*/
+    height:100%;/*48*/
+    list-style: none;
+}
+.snav ul li{
+    float: left;
+    width:12.5%;
+    height:48px;   
+    text-align: center;
+}
+.snav ul li a{
+    display: block;
+    width:100%;
+    color:#999;
+    height:48px;
+    line-height: 48px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.snav ul li a:hover{
+    background-color: #000;
+    color:#fff;
+}
+
+
+
+.photo1{
+    list-style: none;
+    width: 100%;
+    height:425px;
+}
+.photo1 li{
+    float: left;
+    width:240px;
+    height:423px;
+    margin-right: 40px;
+}
+.photo1 li:nth-child(6){
+    margin-right: 0;
+}
+.photo1 li .p1{display: block;}
+.photo1 li .p2{display: none;}
+
+.photo1 li:hover .p1{display: none;}
+.photo1 li:hover .p2{display: block;}
+.txt1 h4{
+    padding: 10px;
+}
+.txt1 p{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.txt1 p.t1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+/* overflow: hidden;: 박스에서 넘쳐난 텍스트 숨기기
+white-space: nowrap;: 줄바꿈이 없어짐
+text-overflow: ellipsis;: ... 말줄임 효과
+word-break: break-all;: 어절이 유지되지 않고 끊어져서 줄바꿈 됨 */
+
+.txt1 .price2{
+    color:#aaa;
+}
+.txt1 .sale1{color:red;}
+
+footer{
+    width: 100%;
+    height:295px;
+    padding: 60px 0 55px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+
+}
+.footer_in{
+    width: 1600px;
+    height:180px;
+    margin: 0 auto;
+}
+
+.footer_up{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.footer_up .left{
+    float: left;
+}
+.footer_up .f_menu{
+    float: right;
+    list-style: none;
+}
+.footer_up .f_menu li{
+    float:left;
+}
+.footer_up .f_menu li a{
+    display: block;
+    text-decoration: none;
+    color:#333;
+    padding: 10px;
+    font-size: 12px;
+}
+.footer_up .f_menu li:last-child a{
+    padding-right: 0;
+}
+
+.footer_down{
+    width:100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+.footer_down p{
+    line-height: 1.5;
+}
+.footer_down .left{
+    float: left;
+}
+.footer_down .left .p2 a{
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 20px;
+    background: url(../image/icon-arr-dark.svg) no-repeat 90% 50%;
+}
+.footer_down .left p:last-child{
+    padding-top: 15px;
+}
+.footer_down .right{
+    float: right;
+    /* border: 1px solid #333; */
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer_down .right p .s1{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.footer_down .right p.p3{
+    margin-top: 15px;
+}
+.footer_down .right .r_logo a{
+    width:52px;
+    height:52px;
+    /* border: 1px solid #333; */
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    background: url(../image/ESCROW_mark.png) no-repeat 0 0;
+}

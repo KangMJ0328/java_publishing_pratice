@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const numbers = [1,2,3,4,5];
+
+        //forEach() 메서드 사용
+        const squaredNumbersForEach = [];
+
+        numbers.forEach(function(number){
+            squaredNumbersForEach.push(number * number);
+        });
+
+        console.log("Using forEach():" , squaredNumbersForEach);
+
+        // map()함수 사용
+        const squaredNumbersMap = numbers.map(function(number){
+            return number * number;
+        });
+        console.log("Using forEach():",squaredNumbersMap);
+        // map() 함순느 각 요솔르 제곱하여 배열 squaredNumbersMap 생성합니다.
+        //  map() 함수는 변환작업을 수행한 결과를 새로운 배열로 반환합니다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

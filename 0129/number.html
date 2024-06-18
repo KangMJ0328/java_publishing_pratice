@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number</title>
+</head>
+<body>
+    <script>
+        var num1 = 100;
+        var num2 = 200;
+        var num3 = 300;
+        var num4;
+        var num5 = num1 + num2;
+        // alert(num5);
+        // console.log(num5);
+        document.write(num5+"<br/>");
+        //브라우저화면에 num5를 출력하시오 
+        var num6='100'; //'100' 따옴표를 하면 문자형
+        var num7 = num1 + num6;
+        document.write(num7+"<br/>"); //100100
+        //alert(1/0); //무한
+        alert( "숫자 아님" /2 ); //NaN 부정확한 숫자 연산
+        var str = "Hello";
+        let str2 ='Single quotes are ok too';
+        // document.write 영어로 Hello 는 인사입니다.
+        document.write("영어로"+str+"는 인사입니다. </br>");
+        
+        //바닐라 js es6
+        document.write(`영어로${str}는 인사입니다. </br>`);
+    </script>
+</body>
+</html>

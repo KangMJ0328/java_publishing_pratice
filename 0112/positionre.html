@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .box{
+        width:150px; height:150px;
+        position: static;
+        /* 일반적으로 생략가능 */
+      } 
+     .box1{background-color: red;}
+     .box2{
+        background-color:green;
+        position: relative;
+        top: 50px;
+        left: 50%;
+        z-index: 1;
+        /* relative 자리값이 있다. */
+        /* 기준 위치 : 최초에 있었던 위치에서 top, left 속성으로 이동 가능 */
+    }
+     .box3{
+        background-color: blue;
+        position: relative;
+
+    }
+     .box4{background-color: orange;}
+</style>
+
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+	<div class="box box3">박스3</div>
+	<div class="box box4">박스4</div>
+</body>
+</html>

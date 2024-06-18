@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+a{text-decoration: none;}
+.main_area {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: url(../images/intro.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main_area .title {
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    width: 840px;
+    margin: 0 0 0 -420px;
+    height: 120px;
+    line-height: 2.6;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.main_area .title.active {
+    opacity: 1;
+}
+.main_area .title h2 {
+    margin: 0 0 40px;
+    line-height: 1;
+    font-size: 68px;
+    font-weight: 800;
+}
+.main_area .title span {
+    font-weight: 600;
+}
+.main_area .title a {
+    text-decoration: underline;
+    color: #fff;
+}
+.sub {
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+}
+.sub.one {
+    background: url(../images/one.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sub.one .box {
+    left: 100%;
+}
+.sub.one .box.active {
+    left: 50%;
+}
+.sub .box h2 {
+    line-height: 1.25;
+    font-size: 32px;
+    font-weight: 800;
+}
+.sub .box p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+}
+.sub.two {
+    background: url(../images/two.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sub.two .box {
+    left: -50%;
+}
+.sub.two .box.active{
+    left: 0%;
+}
+.sub .box {
+    display: inline-block;
+    position: relative;
+    margin-top: 60px;
+    padding: 56px 40px;
+    width: 50%;
+    background: #fff;
+    color: #39454b;
+    transition: all 1s ease;
+    box-sizing: border-box;
+}
+.sub .box h2 {
+    line-height: 1.25;
+    font-size: 32px;
+    font-weight: 800;
+}
+.sub .box p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: rgba(0,0,0,.4);
+}

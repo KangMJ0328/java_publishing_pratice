@@ -1,0 +1,157 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.wrap{
+    width:100%;
+    overflow: hidden;
+}
+.contents{
+    width:1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.contents h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
+.section1{
+    width:100%;
+    overflow: hidden;
+}
+.section1 article{
+    float:left;
+    margin-right: 26px;
+    width:516px;
+    height:420px;
+    text-align: center;
+}
+.section1 article:last-child{
+    margin-right: 0;
+}
+.section1 article .box{
+    width:516px;
+    height:362px;
+    
+}
+.section1 article .box img{
+    display: block;
+}
+.section1 article h2{
+    margin-top: 10px;
+    font-size: 30px;    
+}
+.section1 article h2 a{
+    display: inline-block;
+    padding: 0 15px;
+    background: url(../images/icon-ourstory-arrow.svg) no-repeat 100% 55%;
+}
+.section2{
+    width: 100%;
+    padding: 150px 0;
+}
+.cbox{
+    width:100%;
+}
+.cbox img{
+    display: block;
+    width: 100%;
+}
+footer{
+    border-top: 1px solid #666;
+    width: 100%;
+    height:274px;
+    padding: 80px 0;
+}
+.footer_in{
+    width:1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.left{
+    width:65%;
+    height:281px;
+    float: left;
+}
+
+.footer_in .left .logo{
+    padding-bottom: 20px;
+}
+.footer_in .left ul {
+    overflow: hidden;
+}
+
+.footer_in .left ul li{
+    float: left;
+    font-size: 14px;
+    height:30px;
+    line-height: 30px;
+    padding:0 10px ;
+    position: relative;
+}
+.footer_in .left ul li:first-child{
+    padding-left:0 ;
+}
+
+.footer_in .left ul li::after{
+    content: '';
+    position: absolute;
+    width:1px;
+    height:11px;
+    background-color: #ccc;
+    right:0px;
+    top:33%;
+}
+.footer_in .left ul li:last-child::after{
+    background: none;
+}
+
+.footer_in .left p{
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer_in .left p.copy{
+    padding-top: 10px;
+}
+.right{
+    width:35%;
+    height:281px;
+    float: right;
+    /* background-color: #ccc; */
+}
+.right .customer{
+    float: left;
+    /* width: 60%; */
+}
+.right .customer h2{
+    padding-bottom: 15px;
+}
+.right .customer p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.right .customer .sns_link{
+    padding-top: 10px;   
+}
+.right .customer .sns_link a{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+.right .family{
+    float:left;
+    /* width: 40%; */
+    margin-left: 50px;
+}
+.family select{
+    padding: 10px;
+    width: 200px;
+}
+
+
+

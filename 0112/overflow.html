@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow</title>
+<style>
+.bigbox, .bigbox1{
+	width:600px;
+	
+	background-color:yellow;
+	border:1px solid #333;
+	margin:0 auto;
+}
+.box{
+	width:150px;
+	height:150px; 
+	background-color:lime; 
+	margin:10px;
+}
+.box1{float:left;overflow: hidden;}
+.box2{float:left;overflow: scroll;}
+.box3{float:left;}
+.box4{float:left;overflow:auto;}
+/*
+overflow:hidden;
+overflow:auto;넘치는 부분만 스크롤이 생긴다.
+overflow:scroll;가로,세로 스롤이 다생긴다.
+
+*/
+
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.bigbox1{overflow:auto;}
+</style>	
+</head>
+<body>
+	<div class="bigbox cf">
+		<div class="box box1">동해물과 백두산이 마르고 닳도록 
+			하느님이 보우하사 우리나라 만세
+			무궁화 삼천리 화려 강산
+			대한 사람 대한으로 길이 보전하세
+			무궁화 삼천리 화려 강산
+			대한 사람 대한으로 길이 보전하세
+		</div>
+		<div class="box box2">동해물과 백두산이 마르고 닳도록 
+			하느님이 보우하사 우리나라 만세
+			무궁화 삼천리 화려 강산
+			대한 사람 대한으로 길이 보전하세
+			무궁화 삼천리 화려 강산
+			대한 사람 대한으로 길이 보전하세
+		</div>
+	</div>
+	<div class="bigbox1">
+		<div class="box box3">
+			동해물과 백두산이 마르고 닳도록 
+		하느님이 보우하사 우리나라 만세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+
+		</div>
+		<div class="box box4">
+		동해물과 백두산이 마르고 닳도록 
+		하느님이 보우하사 우리나라 만세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		무궁화 삼천리 화려 강산
+		대한 사람 대한으로 길이 보전하세
+		</div>
+	</div>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+/*reset css*/
+*{margin:0; padding:0;}
+img{border:0;}
+ul,ol{list-style:none;}
+	a{text-decoration:none; outline:0; text-decoration:none; color:#bbb;	
+font-family: 'Nanum Brush Script', serif;}
+
+
+body{position:fixed; width:100%; height:100%; background:#111;}
+
+.vid{position:fixed; width:100%; height:100%; left:0px; 
+top:-60px;  opacity:0.9;}
+.vid video{width:100%; min-width:1600px;}
+
+/* 상단 숨김 컨텐츠 영역*/
+#top_bg{position:relative; top:0px; width:100%; height:340px;
+background:url(../images/bg-top.png) no-repeat;
+ background-size:100%; transition:all 0.6s; transform:translateY(-240px);}
+
+#top_bg:hover{transform:translateY(0); z-index:11;}
+#top_bg:hover .icontop{opacity:0;}
+
+#top_bg form{width:500px; margin:0 auto; height:50px;padding-top:130px; margin-bottom:35px;
+height:70px;}
+#top_bg input{padding:20px; color:#666; float:left;}
+#top_bg form a{width:70px; height:60px; background:orange;
+ display:block; float:left; text-align:center; line-height:60px;
+ color:white; font-size:1.5em; font-family: "맑은 고딕";
+ border-radius:0 10px 10px 0; z-index:10;}
+ 
+#top_bg>a{margin-left:80%; font-family: 'Nanum Pen Script', cursive;
+ font-size:4em; color:white; border-radius:0 0 30px 30px;
+background:orange; display:block; width:300px; height:100px;
+line-height:110px; text-align:center; border:5px solid white;
+border-top:0;}
+
+#top_bg .fa{display:block; width:50px; height:40px; 
+color:white; opacity:0.3; margin-left:85%; text-align:center;}
+.icontop{transition:all 0.6s;}
+.icontop i:nth-child(1){font-size:4em; margin-top:10px;animation:icontopani linear 1.5s 0s infinite alternate;}
+.icontop i:nth-child(2){font-size:5em; animation:icontopani linear 1.4s 0s infinite alternate;}
+
+
+
+/* 왼쪽 하단 로고이미지 영역*/
+header{position:relative; width:100%; height:100%; perspective:200px;}
+
+  
+  
+#bg_line{position:absolute; width:100%; height:100%; top:100px; }
+
+#bg_line h1{position:absolute; bottom:20%; left:5%; width:200px; 
+height:200px;transition:all 1s; z-index:10;}
+#bg_line h1 img{border-radius:30px; cursor:pointer; transition:all 0.6s;
+animation:ani linear 1.5s 0s infinite alternate;}
+#bg_line h1:hover{transform:scale(1.2); cursor:pointer; }
+
+#bg_line h1:hover +.imgs{transform:translateX(500px); opacity:1;
+z-index:10;}
+#bg_line h1:hover .fa{opacity:0;}
+ 
+#bg_line h1 .fa{color:white;
+ animation:logoani linear 1.5s 0s infinite alternate;
+ position:absolute; top:150px; left:100px;opacity:1;}
+ 
+header>img{position:absolute; bottom:5%; left:6%;
+  animation:logoani linear 1.5s 0s infinite alternate;}
+
+/*왼쪽 하단 로고호버시 말풍선 메뉴*/
+
+ 
+.imgs{width:800px; height:700px; opacity:0;  z-index:9;
+ position:absolute; top:110px; left:-500px; 
+ background:url(../images/menuimgs_bg.png) no-repeat; 
+ transition:all 1.5s;
+}
+.imgs:hover{opacity:1; left:0px; transform:scale(1.2);
+}
+.imgs:hover img{transform:scale(1);}
+.imgs img{border-radius:50%; width:80px; height:80px; 
+cursor:pointer; transition:all 0.5s;}
+
+.imgs img:hover{transform:scale(1.5); border-radius:20px; }
+
+.imgs>div{width:500px; height:500px; margin-top:120px;
+ margin-left:170px;}
+
+
+/*키프레임 생성*/
+@keyframes ani{0%{transform:scale(1);} 
+					100%{ transform:scale(1.2);}}
+@keyframes logoani{0%{transform:scale(0.8);} 
+					100%{ transform:scale(1.5);}}
+					
+@keyframes rightani{0%{transform:rotate(0deg);} 
+					100%{ transform:rotate(-20deg);}}
+@keyframes icon1ani{0%{right:-30px; bottom:270px; transform:scale(0.6);} 
+					100%{right:30px; bottom:300px; transform:scale(0.4);
+					transform:rotate(-20deg)}}
+					
+@keyframes icontopani{0%{transform:scale(1);} 
+					100%{transform:scale(1.2);opacity:1;}}
+					
+
+/*오른쪽 핸드폰배너 영역*/
+h2{position:absolute; bottom:100px;right:-130px;
+animation:rightani linear 1s 0s infinite alternate;
+transform-origin:right bottom; 
+cursor:pointer;}
+h2>img{transition:all 0.5s; transform:scale(0.8); display:block;}
+h2>img:hover{transform:scale(2); transform:translateY(-150px)}
+
+h2:hover +.sns{opacity:1; height:700px; right:30px; }
+
+.sns{position:absolute; top:50px; right:-300px; 
+ width:200px; height:500px; font-size:5em; text-align:center;
+ padding-top:50px; opacity:0; transition:all 0.6s;}
+.sns:hover{opacity:1; width:150px; right:30px;}
+ 
+.fa-facebook-official{color:blue;}
+.fa-commenting-o{color:yellow;}
+.sns i{cursor:pointer; transition:all 0.6s; width:100px; height:100px;}
+.sns .fa:hover{transform:translate(-30px);}
+.sns:hover +h4{opacity:0;}
+ 
+h4{position:absolute; right:0; bottom:0px; font-size:2em;
+color:white; animation:icon1ani linear 1s 0s infinite alternate;
+transition:all 0.6s;}
+
+
+

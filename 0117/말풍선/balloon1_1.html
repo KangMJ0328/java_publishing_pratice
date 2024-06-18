@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balloon1</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+body{
+    text-align: center;
+}
+.balloon{
+    display: inline-block;
+    background-color:blue ;
+    color:#fff;
+    width:120px;
+    height:50px;
+    line-height: 50px;
+    position: relative;
+}
+.balloon::after{
+    content: '';
+    position: absolute;
+    width:0px;
+    height:0px;
+    bottom:-20px;
+    border-top: 10px solid orange;
+    border-left:10px solid red ;
+    border-right:10px solid yellow;
+	border-bottom:10px solid green;
+}
+
+        </style>
+    </head>
+    <body>
+        <h2 class="balloon">보험플랜</h2>
+    </body>
+    </html>
+</body>
+</html>

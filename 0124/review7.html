@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ *{margin: 0;padding: 0;}   
+ .cf::after{
+    content: '';
+    display: block;
+    clear: both;
+ }
+.bigbox{
+    width:1000px;
+    margin: 0 auto;
+    border: 2px solid tan;
+    /* height:220px; */
+    padding: 10px 0;
+    text-align: center;
+}
+.bigbox h2{
+    padding-bottom: 10px;
+}
+.box{
+    float:left;
+    margin-left: 40px;
+    border: 1px solid #333;
+    width:200px;
+    height:150px;
+}
+.box img{
+    display: block;
+}
+.box{
+    position: relative;
+}
+.box1 p{
+    position: absolute;
+    height:100%;
+    line-height: 100%;
+    left: 0; 
+    top:0;
+    color: #fff;
+    background-color: red;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+   <div class="bigbox cf">
+        <h2>선글라스 최신상품</h2>
+        <div class="box box1">
+            
+            <img src="images/women1.jpg" alt="">
+           <p>버버리 선글라스</p>
+        </div>
+        <div class="box box2">
+            <img src="images/women2.jpg" alt="">
+        </div>
+        <div class="box box3">
+            <img src="images/women3.jpg" alt="">
+        </div>
+        <div class="box box4">
+            <img src="images/women4.jpg" alt="">
+        </div>
+   </div>
+  
+</body>
+</html>

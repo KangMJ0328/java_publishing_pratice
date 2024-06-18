@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+$(function(){
+    $(window).scroll(function(){
+        var sct = $(window).scrollTop();
+        //마우스 세로스크롤의 값(양)을 구해서 sct에 저장
+        //var sct = $(this).scrollTop();
+        $('h1.s_top').text(sct);
+        console.log(sct);
+        //구해진 스크롤 값을 실시간으로 .s_top에 보여줌 
+        if(sct >= 450 && sct <=2000){
+            $('.left1').addClass('on');
+        }else{
+            $('.left1').removeClass('on');
+        }
+
+        if(sct >= 1000 && sct <=2000)  {
+            $('.right1').addClass('on');
+        }else{
+            $('.right1').removeClass('on');
+        }
+        if(sct >= 2500){
+            $('.section4 .s4_cover div').addClass('active');
+        }
+
+
+
+    });
+
+
+});
+
+
+</script>
+
+<style>
+      *{margin:0;padding:0;}
+      h1.s_top{
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: rgba(255,255,255,0.7);
+        z-index: 100;
+       }
+
+      .section{
+        width:100%;
+        height:100vh;
+        position: relative;
+      }
+      .section1{
+        background: url(img/b1.jpg) no-repeat 50% 50% / cover;
+      }
+      .section2{
+        background: url(img/b2.jpg) no-repeat 50% 50% / cover;
+      }
+      .section2 .left1{
+        padding: 50px;
+        background-color: #fff;
+        text-align: center;
+        position: absolute;
+        top:50px;
+        left:-350px;
+        transition:all 0.3s;
+      }
+      .section2 .left1.on{
+        left:100px;
+      }
+      .section2 .right1{
+        padding: 50px;
+        background-color: #fff;
+        text-align: center;
+        position: absolute;
+        bottom:50px;
+        right:-350px;
+        transition:all 0.3s;
+      }
+      .section2 .right1.on{
+        right:100px;
+        }
+
+      .section3{
+        background: url(img/b3.jpg) no-repeat 50% 50% / cover;
+      }
+      .section4{
+        background: url(img/b4.jpg) no-repeat 50% 50% / cover;
+      }
+      .section4 .s4_cover{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:900px;
+        margin-left: -450px;
+        height:200px;
+        text-align: center;
+        }
+
+        .section4 .s4_cover > div{
+            float: left;
+            background-color: rgba(255,255,255,0.7);
+            width:200px;
+            padding: 30px 0;
+            margin-top: 70px;
+            margin-left: 20px;
+            opacity: 0;
+        }
+         .section4 .s4_cover>div.active{
+            opacity: 1;
+            margin-top: 0;
+        }
+        .section4 .s4_cover > div.s4_1{
+            transition: all 0.8s;
+        }
+
+        .section4 .s4_cover > div.s4_2{
+            transition: all 0.8s 0.4s;
+            /* 뒤의 0.4는 지연시간 - 0.4초 후에 transition이 실행됨*/
+        }
+        .section4 .s4_cover > div.s4_3{
+            transition: all 0.8s 0.8s;
+        }
+        .section4 .s4_cover > div.s4_4{
+         transition: all 0.8s 1.2s;
+        }
+
+
+      .section5{
+        background: url(img/b5.jpg) no-repeat 50% 50% / cover;
+      }
+
+</style>
+
+    
+</head>
+<body>
+    <h1 class="s_top">0000</h1>
+    <div class="section section1">메인1</div>
+    <div class="section section2">
+        <div class="left1">
+            <h1>주현씨! 배고파용</h1>
+            <p>삼겹살 사줘요!!!</p>
+        </div>
+        <div class="right1">
+            <h1>에고! 샘</h1>
+            <p>감기인데 집에서 사드세요!!!</p>
+        </div>
+    </div>
+    <div class="section section3">메인3</div>
+    <div class="section section4">
+        <div class="s4_cover">
+            <div class="s4_1">
+              <h1>HTML</h1>
+              <p>하면할수록 재미있다.</p>
+            </div>
+            <div class="s4_2">
+              <h1>CSS</h1>
+              <p>이제좀 알것 같다.</p>
+            </div>
+            <div class="s4_3">
+              <h1>javascript</h1>
+              <p>뭔말인지 통 몰겠다.</p>
+            </div>
+            <div class="s4_4">
+              <h1>jQuery</h1>
+              <p>뭔가 되네!신기하다.</p>
+            </div>
+        </div>
+    </div>    
+    <div class="section section5">메인5</div>
+</body>
+</html>

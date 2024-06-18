@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+    color:#000
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    color:#666;
+    overflow-x:hidden;
+}
+.header_up{
+    width:100%;
+    height: 50px;
+    position: fixed;
+    background-color: #F29B20;
+    text-align: center;
+    z-index: 100;
+}
+.header_up a{
+    color:#fff;
+    font-size: 18px;
+}
+.header_up a span{
+    display:inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 30px;
+    background: url(../images/pc_clio_direct_arrow.png) no-repeat 95% 50%;
+}
+header{
+    width: 100%;
+    height:100px;
+    background-color:#000;
+    position: relative;
+    padding-top: 50px;
+}
+#header_in{
+	width:1000px;
+	margin:0 auto;
+	height:100px;
+	position:relative;
+}
+/* 랭귀지 영역 */
+#lnb_lang ul li{
+	float:left;
+}
+#lnb_lang ul li a{
+    display:block;
+	width:50px;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	font-weight:700;
+	border:1px solid #666;
+    text-align:center;
+	box-sizing:border-box;
+	text-decoration:none;
+	border-left:none;
+}
+#lnb_lang ul li:nth-child(1) a{
+	border-left:1px solid #666;
+}
+#lnb_lang ul li:hover a{
+	background-color:#fff;
+	color:#555;
+}
+.logo{
+    display:block;
+	position:absolute;
+	left:50%;
+	top:50%;
+    transform:translate(-50%,-50%);
+}
+/* 지엔비 스타일 */
+#gnb{
+    position: absolute;
+    right:0;
+    top:10px;
+}
+#gnb ul li{float:left;}
+
+#gnb ul li a{
+	color:#fff;
+}
+#gnb ul li span{
+    display:inline-block;
+	width:1px; 
+	height:10px;
+	background-color:#fff;
+	margin:2px 10px 0;
+}
+
+/*엘엔비 스타일*/
+
+#lnb_bg{
+	background-color:#f5ede0;
+	height:50px;
+	position:relative;
+	z-index:3;
+}
+#lnb{
+    width:1000px;
+	margin:0 auto;
+	text-align:center;
+}
+#lnb > ul > li{
+	float:left;
+	position:relative;
+	margin-top:15px;
+}
+
+#lnb > ul > li  >a{
+    font-size:15px;
+	color:#666;
+	display:block;
+	width:100px;
+	font-weight:bold;
+	height:35px;
+	margin:0 5px;
+	text-decoration:none;
+}
+#lnb ul li ul li a{
+    color:#666;
+	display:block;
+	width:100px;
+	height:20px;
+	line-height:20px;
+	text-decoration:none;
+}
+#lnb ul li ul{
+    background-color:#fff;
+	position:absolute;
+	border:1px solid #666;
+	padding:15px 10px;
+	margin:0 5px;
+	display:none;
+    left:-10px;
+}
+#lnb ul li:hover ul{
+	display:block;
+}
+.search{
+    background-color: #fff;
+    padding: 0 3px;
+    float:left;
+    margin: 12px 20px 0 10px;
+}
+.search input{
+    border:0;
+	width:130px;
+	height:28px;
+	vertical-align:5px;
+}
+.search img{
+	width:20px;height:20px;
+}
+.star{
+    float: left;
+    margin-top: 14px;
+}
+#main1{
+    position: relative;
+    top:0;
+    width:1920px;
+    max-width: 1920px;
+    min-width: 1280px;
+    left:50%;
+    transform:translate(-50%,0);
+}
+#main1 img{
+	width:100%;
+	display:block;
+}
+/* 신상품 */
+
+#new{
+    margin:30px 0;
+}
+#new h2{
+	font-size:24px;
+	text-align:center;
+	padding:15px 0;
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+	padding:10px 0;
+    text-align: center;
+}
+.content ul li{
+	float:left;
+	margin-right:13px;
+	width:240px;
+	height:240px;
+	border:1px solid #333;
+	box-sizing:border-box;
+	position:relative;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.content ul li img{
+	width:100%;
+}
+.content ul li:nth-child(4){margin-right:0px;}
+
+.content ul li p{
+    padding-top: 10px;
+}
+#video1{
+    margin-top: 80px;
+}
+#video1 h2{
+	font-size:24px;
+	text-align:center;
+	padding:15px 0;
+}
+.clioVideo{
+	position:relative;
+	width:1920px;
+	height:480px;
+	left:50%;
+	margin-left:-960px;
+
+}
+
+#sns{
+    width:1000px;
+	margin:0 auto;
+	padding-bottom:50px;
+}
+
+#sns h2{
+	font-size:24px;
+	padding:15px 0;
+	text-align:center;
+}
+#sns .sns_left{
+    width:600px;
+    height:670px;
+    float:left;
+    border:1px solid #333
+}
+#sns .sns_right{
+	width:380px;
+	height:670px;
+	float:right;
+	border:1px solid #333;
+}
+.sns_left .sns_top li{
+    float: left;
+    width:200px;
+	height:200px;
+}
+.sns_left .sns_top li img{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.sns_bottom{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sns_bottom li{
+    width:232px;
+    height:50px;
+   
+    text-align: center;
+}
+.sns_bottom li a{
+    display: block;
+}
+.sns_bottom li img{
+    width: 50%;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-top: 10px;
+}
+.sns_bottom li:nth-child(1){
+    background-color: #37b4ee;
+    margin-right: 30px;
+}
+
+.sns_bottom li:nth-child(2){
+    background-color: #000;
+}
+
+#f_lnb_bg{
+	width: 100%;
+	background-color: #000;
+}
+#f_lnb{
+	width:1000px;
+	margin:0 auto;
+	padding:20px 0;
+}
+
+#f_lnb>ul>li{
+	float:left;
+	margin-right:50px;
+}
+#f_lnb>ul>li:last-child{
+	margin-right: 0;
+}
+
+#f_lnb ul li a{
+	color:#ddd;
+	font-size: 13px;
+	line-height: 1.5;
+	display: block;
+	padding: 10px 0;
+}
+#f_lnb>ul>li>a{
+	color:#fff;
+	font-size:15px;
+	font-weight:bold;
+	padding:20px 0;
+	display:block;
+}
+#f_lnb ul  ul  a:hover{
+	color:#fff;
+	font-weight:bold;
+}
+.footer_t{
+	width:100%;
+	background-color:#eee;
+}
+.f_top{
+	width:1000px;
+	margin:0 auto;
+	padding:10px 0;
+}
+.fleft{float:left;}
+.fright{float:right;}
+
+.f_top ul li{float:left;}
+
+.f_top ul li a{
+	display: block;
+	color:#999;font-size:15px;
+	line-height:30px;
+	padding:0 10px;
+	position: relative;
+}
+.f_top ul li a::after{
+	content: '';
+	position: absolute;
+	right:0;
+	top:30%;
+	width:1px;
+	height:14px;
+	background-color: #999;
+	
+}
+
+.fleft li:last-child a::after,
+.fright li:last-child a::after{
+	background:none;
+}
+.fright li:first-child a{padding-right: 20px;}
+.fright li:first-child a::after{
+	width:14px;
+	height:14px;
+	background: url(../images/pc_arrow_family.gif) no-repeat 100% 50%;
+}
+
+.footer_b{
+	width:100%;
+	background-color:#fff;
+}
+.f_b{
+	width:1000px;
+	margin:0 auto;
+	padding:50px 0 70px 0;
+	font-size:13px;
+}
+.f_b p{
+	line-height: 1.5;
+}
+.f_b .left1{
+	float:left;
+	padding-right:20px;
+}
+.f_b .left2{
+	float:left;
+	padding:0 30px;
+}
+.f_b .left3{
+	float:left;
+	padding:0 30px;
+	position: relative;
+}
+.f_b .left3::after{
+	content: '';
+	position: absolute;
+	top:0;
+	right:0;
+	width: 1px;
+	height:100%;
+	background-color: #ccc;
+}
+.f_b .left3::before{
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	width: 1px;
+	height:100%;
+	background-color: #ccc;
+}
+
+.f_b .left4{
+	float:left;
+	padding-left: 30px;
+}
+.f_b .left4 p span{
+	display: inline-block;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	padding: 1px 3px;
+	margin-left: 5px;
+}
+.tultip1, .tultip2{
+	position: relative;
+}
+
+.tultip1 ul{
+	position: absolute;
+	padding: 10px;
+	left:0;
+	top:-215px;
+	width:250px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: none;
+}
+.tultip1 ul::after{
+	content:'';
+    position: absolute;
+    width:0px;
+    height:0px;
+    left:45%;
+    bottom:-9px;
+    border-top: 10px solid #fff;
+    border-left:5px solid transparent ;
+    border-right:5px solid transparent;
+}
+.tultip1 ul::before{
+	content:'';
+    position: absolute;
+    width:0px;
+    height:0px;
+    left:45%;
+    bottom:-11px;
+    border-top: 10px solid #ccc;
+    border-left:5px solid transparent ;
+    border-right:5px solid transparent;
+}
+
+
+
+
+
+.tultip1:hover ul{
+	display: block;
+}
+
+.tultip1 ul li{
+	line-height: 2.0;
+	border-bottom: 1px solid #ccc;
+	
+}
+
+.quick{
+	position: fixed;
+	top:400px;
+	right:60px;
+	width:60px;
+	z-index:101;
+}
+.quick li{
+	position:relative;
+	margin:0 0 10px;
+	padding:0 0 20px;
+	text-align:center;
+}
+
+.quick li .icon{
+	width:60px;
+	height:60px;
+	margin:0 0 3px;
+	overflow:hidden;
+}
+.quick li .icon .quick1{
+	margin:0;
+}
+.quick li .icon .quick2{
+	margin:-60px 0 0;
+}
+.quick li .icon .quick3{
+	margin:-120px 0 0;
+}
+.quick li .icon .quick4{
+	margin:-180px 0 0;
+}
+.quick li .icon .quick5{
+	margin:-240px 0 0;
+}
+.quick li:after{
+	content:'';
+	position:absolute;
+	left:50%;
+	bottom:0;
+	width:1px;
+	height:10px;
+	margin-left:-0.5px;
+	background:#777;
+} 
+.quick li:last-child:after{
+	background:none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>DOM을 공부합시다</h1>
+        <a href="#" onclick="addp(); this.onclick='';">더보기</a>
+        <div id="info"></div>
+    </div>
+<script>
+    function addp(){
+        var newP = document.createElement("p");
+        var txtNode = document.createTextNode("DOM은 Documenrt Object Model의 준말")
+        newP.appendChild(txtNode);
+        document.getElementById("info").appendChild(newP);
+    }
+</script>
+
+</body>
+</html>

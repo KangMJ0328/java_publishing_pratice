@@ -1,0 +1,209 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:400,%20600,700,900,800);
+@import url(https://fonts.googleapis.com/css?family=Lora:700,400);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(../../../../../fonts.googleapis.com/earlyaccess/hanna.css);
+/******************/
+/*    Reset CSS  */
+/******************/
+* { margin:0;  padding:0; }
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#bbb;}
+img { border:0;}
+body { width:100%; height:100%; background:#f8ecdc;}
+.cf:after { content:''; display:block; clear:both; }
+
+.vid {width:100%; height:100%; position:fixed; top:0px; left:0px; opacity:0.9;}
+.vid video { width:100%; min-width:1200px; }
+
+h1 {position:fixed; top:30px; left:50px; z-index:10; opacity:1;
+animation-name:titleFadingIn;
+animation-duration:2.5s;
+
+animation-name:titleGlowing;
+animation-duration:1.2s;
+animation-delay:2.5s;
+}
+@keyframes titleFadingIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes titleGlowing {
+0% {text-shadow:0 0 0px white;}
+50% { text-shadow:0 0 8px white;}
+}
+
+h1 a {color:#f887a2;  text-align:center; line-height:1em;}
+h1 a span.topOne {font-family: 'Lora', serif; color:#f887a2; font-size:37px;}
+h1 a span.bottomOne { clear:both; font-family: 'Muli', sans-serif; font-size:26px;}
+h1 a span {width:130px;  float:left;}
+
+#embelishment { width:600px; height:170px; position:fixed; top:20px; left:-320px; 
+background:radial-gradient( #f0b7b8 50%, rgba(248,135,162,0) 0%  ); opacity:0.7; 
+animation-name:embelishingLipstick;
+animation-duration:3.1s;
+}
+
+@keyframes embelishingLipstick {
+0% { left:-500px; opacity:0;}
+50% { left:-500px; opacity:0.0;}
+100% {left:-320px; opacity:0.7; }
+}
+
+#header { width:430px; height:700px; position:fixed; top:120px;  left:-170px;
+transform:rotate(-4deg); box-sizing:border-box; border:15px solid #f16ea2;
+background:linear-gradient(-8deg, rgba(244,226,213,0.4),rgba(240,183,184,0.4), rgba(248,135,162,0.7));
+animation-name:movingHeader;
+animation-duration:2.5s;
+}
+
+@keyframes movingHeader {
+0% {left:-450px; opacity:0;}
+100% {left:-170px;  opacity:1;}
+} 
+
+header img { width:100px; height:auto;}
+
+/* 상위 메뉴 */
+ul#gnb {position:absolute; width:170px; top:100px; right:0; }
+ul#gnb a {font-family: 'Julius Sans One', sans-serif; color:#222222; }
+ul#gnb > li { background-color:rgba(255,255,255,0); border-bottom:1px solid #de766d; line-height:27px;  transition:all 0.5s;}
+ul#gnb > li:hover {background-color:#f887a2; }
+ul#gnb > li > a { display:block; width:110px; padding:7px 7px 7px 0;  text-align:right;
+font-weight:400; font-size:0.97em; box-sizing:border-box; text-shadow:1px 1px 1px white;}
+ul#gnb > li:hover > a { color:#f4e2d5;}
+
+/*하위 메뉴*/
+ul#gnb > li ul {border-radius:7px;  background-color:#f887a2; box-shadow:-1px -0px 4px #c91863; }
+
+	
+ul#gnb li ul li { background-color:rgba(255,255,255,0); transition:all 1.0s;}
+ul#gnb li ul li:hover { background-color:#c91863; border-radius:7px; }
+ul#gnb li ul li:hover a { color:#f4e2d5; }
+
+ul#gnb li ul li a { display:block; color:black; padding:2px 2px 2px 4px; width:143px;  box-sizing:border-box; text-shadow:0px 1px 1px white;}
+
+
+ul#gnb li.shoppingList  ul { top:23px;}
+ul#gnb li.beautyTipList  ul {  top:64px;}
+ul#gnb li.communityList  ul { top:105px;}
+ul#gnb li.eventsList  ul { top:147px;}
+
+/* SNS icons*/
+ul#sns { position:fixed; top:26px; right:27px; opacity:1;
+animation-name:snsFadingIn;
+animation-duration:2.5s;
+}
+@keyframes snsFadingIn {
+0% { opacity:0; }
+100% { opacity:1; }
+}
+
+ul#sns:after {content:''; display:block; clear:both;}
+ul#sns li {margin-bottom:11px; float:left;}
+ul#sns .fa {font-size:24px; padding:0 12px 0 12px; color:#f16ea2; opacity:0.5; transform:scale(1); transition:all 0.5s;}
+ul#sns .fa:hover {opacity:1; transform:scale(1.4);}
+
+/* side menu */
+#side {position:fixed; bottom:-1.8em; right:-4.1em; 
+animation-name:movingSide;
+animation-duration:2.5s;
+}
+@keyframes movingSide {
+0% { opacity:0; bottom:-13em; right:-15em;}
+100% {opacity:1; bottom:-1.8em; right:-4.1em}
+}
+#side .fa { float:right; margin-right:-6px; color:#a3d1c7; font-size:4.1em; opacity:1;}
+#side .specialCube {opacity:1; transform:scale(1); transition:all 0.7s; }
+
+#side .secondLine .specialCube { animation:specialCubeBeating  1.9s 0s infinite; }
+#side .thirdLine .specialCube { animation:specialCubeBeating 1.5s 0.7s infinite; }
+#side .fourthLine .specialCube { animation:specialCubeBeating 1s 2.2s infinite; }
+#side .fifthLine .specialCube { animation:specialCubeBeating 1.2s 1s infinite; }
+#side .sixthLine .specialCube { animation:specialCubeBeating 1.4s 2s infinite; }
+#side .topLine .specialCube { animation:specialCubeBeating 2s 2.5s infinite; }
+@keyframes specialCubeBeating {
+0% { opacity:0.8; transform:scale(1);}
+100% { opacity:1; transform:scale(1.1);}
+}
+#side .specialCube:hover { opacity:1; transform:scale(1.4); cursor:pointer;}
+
+
+/* 시작: 가장 아래에 있는 큐브 */
+#side .secondLine { position:absolute; right:2em; bottom:2.95em; }
+#side .secondLine .specialCube {color:#80095a; }
+#side .secondLine .event { position:absolute; right:250px; bottom:0px; width:450px; height:200px; }
+#side .secondLine .specialCube~.event { opacity:0; transition:opacity 1.2s;}
+#side .secondLine .specialCube:hover~.event { opacity:1; }
+#side .secondLine .event {text-align:center;  color:#ed0380;
+background:radial-gradient( #a3d1c7 20% , rgba(255,255,255,0) 70% );
+border-radius:100px;
+}
+#side .secondLine .event .titleLine { font-family: 'Hanna', sans-serif; font-size:2.3em; }
+#side .secondLine .event .saleLine { font-family: 'Bangers', cursive; font-size:10.3em;  text-shadow:-1px -1px 1px #333333; line-height:0.85em;}
+#side .secondLine .event .periodLine { font-family: 'Hanna', sans-serif;  font-size:1.4em;  }
+/* 끝: 가장 아래에 있는 큐브 */
+
+/* 시작: 밑에서 두 번째 큐브 */
+#side .thirdLine { position:absolute; right:-0.1em; bottom:5.90em; }
+#side .thirdLine .specialCube {color:#861036; }
+#side .thirdLine .specialCube~.plusEvent { opacity:0; position:absolute; right:380px; bottom:-250px; 
+width:341px; height:241px;
+transition:all 1.2s;
+}
+#side .thirdLine .specialCube:hover~.plusEvent { opacity:1; bottom:-60px;}
+/* 끝: 밑에서 두 번째 큐브 */
+
+/* 시작: 밑에서 세 번째 큐브 */
+#side .fourthLine { position:absolute; right:-2.1em; bottom:8.90em; }
+#side .fourthLine .specialCube {color:#962a81; }
+#side .fourthLine .event { position:absolute; right:317px; bottom:-96px; width:450px; height:200px; }
+#side .fourthLine .specialCube~.event { opacity:0; transition:opacity 1.2s;}
+#side .fourthLine .specialCube:hover~.event { opacity:1;}
+#side .fourthLine .event {text-align:center;  color:#ed0380;
+background:radial-gradient( #a3d1c7 20% , rgba(255,255,255,0) 70% );
+border-radius:100px;
+}
+#side .fourthLine .event .titleLine { font-family: 'Hanna', sans-serif; font-size:2.3em; }
+#side .fourthLine .event .saleLine { font-family: 'Bangers', cursive; font-size:10.3em;  text-shadow:-1px -1px 1px #333333; line-height:0.85em;}
+#side .fourthLine .event .periodLine { font-family: 'Hanna', sans-serif;  font-size:1.4em;  }
+/* 끝: 밑에서 세 번째 큐브 */
+
+/* 시작: 밑에서 네 번째 큐브 */
+#side .fifthLine { position:absolute; right:-4.2em; bottom:11.90em; }
+#side .fifthLine .specialCube {color:#9a4440; }
+#side .fifthLine .specialCube~.plusEvent { opacity:0; position:absolute; right:437px; bottom:-250px; 
+width:341px; height:241px;
+transition:all 1.2s;
+}
+#side .fifthLine .specialCube:hover~.plusEvent { opacity:1; bottom:-160px;}
+/* 끝: 밑에서 네 번째 큐브 */
+
+/* 시작: 밑에서 다섯 번 째 큐브 */
+#side .sixthLine { position:absolute; right:-6.3em; bottom:14.90em; }
+#side .sixthLine .specialCube { color:#5c0e1f; }
+#side .sixthLine .event { position:absolute; right:383px; bottom:-192px; width:450px; height:200px; }
+#side .sixthLine .specialCube~.event { opacity:0; transition:opacity 1.2s;}
+#side .sixthLine .specialCube:hover~.event { opacity:1; cursor:pointer;}
+#side .sixthLine .event {text-align:center;  color:#ed0380;
+background:radial-gradient( #a3d1c7 20% , rgba(255,255,255,0) 70% );
+border-radius:100px;
+}
+#side .sixthLine .event .titleLine { font-family: 'Hanna', sans-serif; font-size:2.3em; }
+#side .sixthLine .event .saleLine { font-family: 'Bangers', cursive; font-size:10.3em;  text-shadow:-1px -1px 1px #333333; line-height:0.85em;}
+#side .sixthLine .event .periodLine { font-family: 'Hanna', sans-serif;  font-size:1.4em;  }
+/* 끝: 밑에서 다섯 번 째 큐브 */
+
+/* 시작: 가장 위에 있는 큐브 */
+#side .topLine { position:absolute; right:-8.3em; bottom:17.90em; }
+#side .topLine .specialCube {color:#ac3b62; }
+#side .topLine .specialCube~.plusEvent { opacity:0; position:absolute; right:500px; bottom:-350px; 
+width:341px; height:241px;
+transition:all 1.2s;
+}
+#side .topLine .specialCube:hover~.plusEvent { opacity:1; bottom:-260px;}
+/* 끝: 가장 위에 있는 큐브 */
+

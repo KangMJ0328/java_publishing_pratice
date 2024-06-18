@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-table</title>
+    <style>
+        *{margin: 0;padding:0;}
+        .bigbox{
+            width:1000px;
+            overflow:hidden;
+            margin:0 auto;
+            display: table;
+        }
+        /* 부모에 display:table;
+        자식에게  display: table-cell; 
+        -동일한간격으로 배치(flaot:left;width:25%;) */
+        .box{
+            display: table-cell;
+            text-align:center;
+            background-color:#eee;
+        }
+        .box h2{padding: 10px;}
+        .box p{line-height: 20px;}
+        
+    </style>
+
+
+
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box box1">
+          <img src="http://placehold.it/100x100" />
+          <h2>상품 사진1</h2>
+          <p>이상품은 써보지 않은분은</p>
+          <p>있어도 한번 써보신분은 없는</p>
+                <p>베스트 상품입니다.</p>
+        </div>
+        <div class="box box2">
+          <img src="http://placehold.it/100x100" />
+          <h2>상품 사진2</h2>
+          <p>이상품은 써보지 않은분은</p>
+          <p>있어도 한번 써보신분은 없는</p>
+                <p>베스트 상품입니다.</p>
+        </div>
+        <div class="box box3">
+          <img src="http://placehold.it/100x100" />
+          <h2>상품 사진3</h2>
+          <p>이상품은 써보지 않은분은</p>
+          <p>있어도 한번 써보신분은 없는</p>
+                <p>베스트 상품입니다.</p>
+        </div>
+        <div class="box box4">
+          <img src="http://placehold.it/100x100" />
+          <h2>상품 사진4</h2>
+          <p>이상품은 써보지 않은분은</p>
+          <p>있어도 한번 써보신분은 없는</p>
+                <p>베스트 상품입니다.</p>
+        </div>
+      </div>
+</body>
+</html>

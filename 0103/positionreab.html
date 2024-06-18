@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position1</title>
+<style>
+*{margin: 0;padding: 0;}
+.box{
+    width:150px;
+    height:150px;
+}
+.box1{
+    background-color: burlywood;
+}
+.box2{
+    position: absolute;
+    right:50px;
+    bottom: 50px;
+    background-color: blueviolet;
+}
+.box3{
+
+    background-color: chartreuse;
+}
+.box4{
+    background-color: coral;
+}
+
+.bigbox{
+    position: relative;/* absolute의 부모역할 */
+    width:500px;
+    height:350px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+</style>
+
+
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="bigbox">
+        <div class="box box2">박스2</div>
+        <div class="box box3">박스3</div>
+    </div>
+    <div class="box box4">박스4</div>
+</body>
+</html>

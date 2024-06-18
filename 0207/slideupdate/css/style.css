@@ -1,0 +1,79 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;color: #333;}
+.ir_pm{
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+/* 전체를 감싸는 banner */
+.banner{
+    width: 1280px;height: 720px;margin: 100px auto;
+}
+.main_visual{
+    width: 100%;height: 100%;position: relative;left: 0;
+    /* overflow: hidden; */
+}
+
+/* 전체이미지를 나열할 수 있도록 충분히 준다. 5120px */
+.main_visual_img{position: absolute;width: 5120px;left: 0%;}
+
+.main_visual_img img{display: block;width:1280px;height: 720px;}
+
+.main_visual_img li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.main_visual_img li:first-child{
+    opacity: 1;
+}
+/* 4장의 사진을 겹칠수 있음 */
+/* .main_visual_img .banner_img.animate{
+    transition: left .3s ease-in;
+} */
+
+.over-btn{
+    position: absolute; bottom: 10%; left: 100px;
+}
+
+.over-btn .prev a{
+    display: inline-block;
+    background: url(../img/icons8-prev-100.png) no-repeat center left;
+    width: 100px;
+    height: 100px;
+    }
+.over-btn .next a{
+    display: inline-block;
+    background: url(../img/icons8-next-100.png)no-repeat center left;
+    width: 100px;
+    height: 100px;
+    }
+.indicator{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicator li{
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    text-indent: -9999em;
+}
+
+/* 활성화 된 pager */
+.indicator li.active{
+    background: #d51156;
+    width: 100px;
+    border-radius: 30px;
+    transition: width  .3s;
+}
+.stop_btn{position: absolute;bottom: 10%;right: 100px;}
+.stop_btn a{display: block;}
+.stop_btn a img{width: 50px; height: 50px;}

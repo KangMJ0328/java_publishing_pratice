@@ -1,0 +1,200 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title> Etude House  </title>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/mediaElementStyle.css" />	
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/modernizr.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.UI.min.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/html5div.js"></script>
+	<script src="js/mediaelement-and-player.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/script.js"></script>	
+	<script>
+	$(function(){
+		var menu = $("#header > #gnb > li");
+		$("#header > #gnb > li > ul").css("display","none");
+
+
+		menu.click(function(){
+			var display = $(this).find("ul").css("display");
+			if(display == "none"){
+				$("#header > #gnb > li > ul").stop().slideUp();
+				$(this).find("ul").stop().slideDown();
+			}else{
+				$(this).find("ul").stop().slideUp();
+			}
+		});
+
+	});
+	</script>
+
+</head>
+	<body>
+		
+	<figure class="vid">
+		<video width="100%"  height="100%" autoplay="autoplay" poster="img/poster.jpg">
+			<source src="img/etude.mp4" type="video/mp4"/>
+			<source src="img/etude.webm" type="video/webm"/>
+			Your browser does not support the video tag.
+		</video>
+	</figure>
+
+ 	<h1 title="Etude House home page">
+		<a href="#">
+			<span class="topOne">ETUDE</span>
+			<span class="bottomOne">House</span>
+		</a>
+	</h1> 
+	
+	<div id="embelishment">
+	</div>
+	
+	<div id="header">
+		<ul id="gnb">
+			<li class="shoppingList">
+				<a href="#">Shopping</a>
+				<ul>
+					<li><a href="#">Eye</a></li>
+					<li><a href="#">Lip</a></li>
+					<li><a href="#">Face</a></li>
+					<li><a href="#">Skin Care</a></li>
+				</ul>
+			</li>
+			<li class="beautyTipList">
+				<a href="#">Beauty Tip</a>
+				<ul>
+					<li><a href="#">Sweet Caster</a></li>
+					<li><a href="#">Play Tip</a></li>
+					<li><a href="#">Beauty News</a></li>
+					<li><a href="#">Girls' Life</a></li>
+				</ul>
+			</li>
+			<li class="communityList">
+				<a href="#">Community</a>
+				<ul>
+					<li><a href="#">Etude News</a></li>
+					<li><a href="#">Sweet Idea</a></li>
+					<li><a href="#">Photo Reviews</a></li>
+				</ul>
+			</li>
+			<li class="eventsList">
+				<a href="#">Events</a>
+				<ul>
+					<li><a href="#">Event House</a></li>
+					<li><a href="#">Free Samples</a></li>
+					<li><a href="#">Thank-u Letter</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<ul id="sns">
+		<li class="snsFirstList"><a href="#"><span class="fa fa-google-plus"></span ></a></li>
+		<li><a href="#"><span class="fa fa-twitter"></span ></a></li>
+		<li><a href="#"><span class="fa fa-tumblr"></span ></a></li>
+		<li><a href="#"><span class="fa fa-facebook"></span ></a></li>
+		<li class="lastList"><a href="#"><span class="fa fa-youtube"></span ></a></li>
+	</ul>
+	
+	<div id="side">
+		<div class="topLine cf">		
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube "></span>		
+			<span class="fa fa-cube"></span>	
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube specialCube"></span>	
+			<div class="plusEvent">
+				<img src="img/plusEvent.png" alt="" />
+			</div>				
+		</div>	
+		
+		<div class="sixthLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube "></span>			
+			<span class="fa fa-cube"></span>	
+			<span class="fa fa-cube specialCube"></span>							
+			<span class="fa fa-cube"></span>
+			<div class="event">
+				<p class="titleLine">- 핑크 멤버십 데이 -</p>					
+				<p class="saleLine">SALE</p>
+				<p class="periodLine">20~50% / 9월11일~13일</p>
+			</div>			
+		</div>	
+		
+		<div class="fifthLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube "></span>
+			<span class="fa fa-cube specialCube"></span>								
+			<span class="fa fa-cube"></span>	
+			<span class="fa fa-cube"></span>
+			<div class="plusEvent">
+				<img src="img/plusEvent.png" alt="" />
+			</div>			
+		</div>			
+		
+		<div class="fourthLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube "></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube specialCube"></span>						
+			<span class="fa fa-cube"></span>
+			<div class="event">
+				<p class="titleLine">- 핑크 멤버십 데이 -</p>					
+				<p class="saleLine">SALE</p>
+				<p class="periodLine">20~50% / 9월11일~13일</p>
+			</div>
+		</div>		
+		
+		<div class="thirdLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube "></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube specialCube"></span>						
+			<span class="fa fa-cube"></span>
+			<div class="plusEvent">
+				<img src="img/plusEvent.png" alt="" />
+			</div>
+		</div>
+
+		<div class="secondLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube specialCube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<div class="event">
+				<p class="titleLine">- 핑크 멤버십 데이 -</p>	
+				<p class="saleLine">SALE</p>
+				<p class="periodLine">20~50% / 9월11일~13일</p>
+			</div>
+		</div>
+	
+	  <div class="bottomLine cf">
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+			<span class="fa fa-cube"></span>
+		</div>
+	</div>
+	
+	<script>
+	$(document).ready(function() {
+		$('video').mediaelementplayer({
+			alwaysShowControls: false,
+			 loop: true,
+			videoVolume: 'horizontal',
+			//features: ['playpause','progress','volume','fullscreen']
+			features: ['','','','']
+		});
+	});
+	</script>	
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header_in">
+            <h1 class="logo"><a href="#"><img src="images/logo.gif" alt="상단로고"></a></h1>
+            <div class="rbox">
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+                <div class="util_search">
+                    <form action="" method="post">
+                        <input type="text" name="findStr" placeholder="검색어 입력" title="검색어">
+                        <a href="#"><img src="images/btn_search_1.gif" alt=""></a>
+                    </form>
+                </div>
+            </div>
+           
+            <ul id="gnb" class="gnb cf">
+                <li class='g_m1 menu01'><a href="#">기업소개</a>
+                    <ul>
+                        <li><a href="#">그룹소개</a></li>
+                        <li><a href="#">CEO 인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">CI</a></li>
+                        <li><a href="#">고객만족</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">GWP</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li class='g_m2 menu01'><a href="#">사업소개</a>
+                    <ul>
+                        <li><a href="#">도시가스사업</a></li>
+                        <li><a href="#">발전 및 집단에너지 사업</a></li>
+                    </ul>
+                </li>
+                <li class='g_m3 menu01'><a href="#">R&amp;D</a>
+                    <ul>
+                        <li><a href="#">기술연구소 소개</a></li>
+                        <li><a href="#">연구 현황</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </li>
+                <li class='g_m4 menu01'><a href="#">투자정보</a>
+                    <ul>
+                        <li><a href="#">지배구조</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">주가정보</a></li>
+                        <li><a href="#">공시/공고</a></li>
+                        <li><a href="#">IR자료실</a></li>
+                    </ul>
+                </li>
+                <li class='g_m5 menu01'><a href="#">홍보센터</a>
+                    <ul>
+                        <li><a href="#">뉴스센터</a></li>
+                        <li><a href="#">홍보영상</a></li>
+                        <li><a href="#">사보</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">PR Library</a></li>
+                        <li><a href="#">사이버역사관</a></li>
+                    </ul>
+                </li>
+                <li class='g_m6 menu01'><a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">안내</a></li>
+                        <li><a href="#">조회/납부</a></li>
+                        <li><a href="#">신청</a></li>
+                        <li><a href="#">문의</a></li>
+                    <li class='line'><a href="#">전기(광명 여세권)</a></li>
+                    </ul>
+                </li>
+                <li class='g_m7 menu01'><a href="#">인재채용</a></li>
+                <li class='g_m8 menu01'><a href="#">윤리경영</a>
+                    <ul>
+                        <li><a href="#">윤리상담/제보센터</a></li>
+                        <li><a href="#">윤리규정</a></li>
+                        <li><a href="#">윤리실천활동</a></li>
+                    </ul>
+                </li>
+                <li class="g_m9 menu02">
+                    <a href="#"><img src="images/img_head_youtube.jpg" alt=""></a>
+                </li>
+                <li class="g_m10 menu02">
+                    <a href="#"><img src="images/img_head_sabo.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="photo">
+            <strong>
+                신뢰와 나눔 속에<br>
+                사랑 받는 기업으로
+            </strong>
+        </div>    
+        <ul class="quickLink">
+            <li class="search01"><a href="#">요금조회</a></li>
+            <li class="search02"><a href="#">요금납부</a></li>
+            <li class="search03"><a href="#">전출입신청</a></li>
+            <li class="search04"><a href="#">신청서약식</a></li>
+            <li class="quickSearch">
+                <form action="" id="freeform"> 
+                    <strong>간편요금조회</strong>
+                    <div class="quickSearch_box">
+                        <input type="text" placeholder="납부자번호" maxlength="15">
+                        <a href="#"><img src="images/s_c.jpg" alt=""></a>
+                    </div>
+                </form>
+            </li>
+            <li class="search05"><a href="#"><img src="images/btn_search01.gif" alt=""></a></li>
+        </ul>
+    </div>
+    <div id="main2">
+        <div id="main2_top">
+            <div class="left2">
+                <ul>
+                    <li><a href="#"><img src="images/b_4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="center2">
+                <div class="c_top">
+                    <h4>뉴스센터</h4>
+                    <ul class="btn1">
+                        <li class="dot on" onclick="m2_Slide(1)"><a href="#dot">번호1</a></li>
+                        <li class="dot" onclick="m2_Slide(2)"><a href="#dot">번호2</a></li>
+                        <li class="dot" onclick="m2_Slide(3)"><a href="#dot">번호3</a></li>
+                    </ul>
+                    <!-- 블릿 -->
+                </div>
+                <div class="c_bom">
+                    <ul>
+                        <li class="slide active">
+                            <a href="#" >
+                                <p class="txt">삼천리구룹,2024년 시무식 개최</p>
+                                <br/>
+                                <p class="date">2024.01.02</p>
+                                <img src="images/cen1.png" alt="존경">
+                            </a>
+                        </li>
+                        <li class="slide">
+                            <a href="#">
+                                <p class="txt">항저우 아시안게임 영웅 유현조 프로,'삼천리스포츠단'입단</p>
+                                <br/>
+                                <p class="date">2023.12.29</p>
+                                <img src="images/cen2.jpg" alt="존경2">
+                            </a>
+                        </li>
+                        <li class="slide">
+                            <a href="#">
+                                <p class="txt">삼천리 마다솜 프로, 실력도 마음씨도 훈훈</p>
+                                <br/>
+                                <p class="date">2023.12.28</p>
+                                <img src="images/cen3.png" alt="존경3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right2">
+                <a href="#" class="title">공지사항</a>
+                <a href="#" class="more"><img src="images/btn_more_1.gif" alt=""></a>
+                <ul>
+                    <li><a href="#">도시가스 요금단가 변동<br/>(2024년 1월 1일자)</a></li>
+                    <li><a href="#">도시가스 요금단가 변도<br/>(2023년 1월 1일자)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main3">
+        <div class="main3_bom">
+           <div class="main3_1">
+              <a href="#" class="btn2">
+                <img class="img_on" src="images/story_on_03.jpg" alt="">
+                <img class="img_off" src="images/story_off_03.jpg" alt="">
+                 <!-- 에너지에서 환경까지<br/>미래를 창조하는 삼천리
+                 <strong>삼천리<br/>story</strong> -->
+              </a>
+           </div>
+           <div class="main3_2">
+              <div class="m_top">
+                 <h4>사회공헌갤러리</h4>
+                 <ul id="btn3">
+                    <li class="m3_dot m3_on" onclick="m3_Slide(1)"><a href="#m3_dot">번호1</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(2)"><a href="#m3_dot">번호2</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(3)"><a href="#m3_dot">번호3</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(4)"><a href="#m3_dot">번호4</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(5)"><a href="#m3_dot">번호5</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(6)"><a href="#m3_dot">번호6</a></li>
+                    <li class="m3_dot" onclick="m3_Slide(7)"><a href="#m3_dot">번호7</a></li>
+                 </ul>
+              </div>
+              <div class="m_bom">
+                 <ul >
+                    <li class="m3_slide m3_active"><a href="#">
+                       <p class="m_txt">자매결연 군부대 방문 (2020-01)</p>
+                       <p class="m_deta">2020.01.28</p>
+                       <img src="images/gallery1.jpg" alt="갤러리1" />      
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">자원봉사활동 (2019-12)</p>
+                       <p class="m_deta">2019.12.20</p>
+                       <img src="images/gallery2.jpg" alt="갤러리2" />
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">사랑나눔의 날 (2019-12)</p>
+                       <p class="m_deta">2019.12.17</p>
+                       <img src="images/gallery3.jpg" alt="갤러리3" />
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">자원봉사활동 (2019-11)</p>
+                       <p class="m_deta">2019.11.26</p>
+                       <img src="images/gallery4.jpg" alt="갤러리4" />
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">임원부인회 봉사활동 (2019-11)</p>
+                       <p class="m_deta">2019.11.19</p>
+                       <img src="images/gallery5.jpg" alt="갤러리5" />
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">Clean Day (2019-11)</p>
+                       <p class="m_deta">2019.11.14</p>
+                       <img src="images/gallery6.jpg" alt="갤러리6" />
+                    </a></li>
+                    <li class="m3_slide"><a href="#">
+                       <p class="m_txt">자원봉사활동 (2019-10)</p>
+                       <p class="m_deta">2019.10.31</p>
+                       <img src="images/gallery7.jpg" alt="갤러리7" />
+                    </a></li>
+                 </ul>
+  
+             </div>
+           </div>
+           <div class="main3_3">
+              <div class="slider">
+                 <ul>
+                    <li>
+                       <a href="#">
+                          <img src="images/on_line.jpg" alt=""/>
+                       </a>
+                    </li>
+                 </ul>
+              </div>
+              <div class="btn4">
+                 <a href="#"><img src="images/btn_on_2.gif"></a>
+                 <a href="#"><img src="images/btn_play_2.gif"></a>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
+</html>

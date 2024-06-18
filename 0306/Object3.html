@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let person ={
+        name: "이정환",
+        age: 25,
+        location:"경기도"
+    };
+    const keyArr = Object.keys(person);
+    // document.write(keyArr);
+    //Object.keys 객체의 프로퍼티의 key를 배열로 변환
+    // for(let key of keyArr){
+    //     document.write(key);
+    // }
+    // document.write(person.name);
+    // document.write(person["age"]);
+    for(let key of keyArr){
+        let value =person[key];
+        document.write(value);
+    }
+
+</script>
+<body>
+
+</body>
+</html>

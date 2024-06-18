@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+.pp{
+    font-size: 32px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.p1{
+    
+    font-weight: 100;
+}
+.p2{
+
+    font-weight: 200;
+}
+.p3{
+    
+    font-weight: 300;
+}
+.p4{
+  
+    font-weight: 400;
+}
+.p5{
+
+    font-weight: 500;
+}
+.p6{
+
+    font-weight: 600;
+}
+.p7{
+  
+    font-weight: 700;       
+}
+h1.logo{
+    background-color: black;
+    color:white;
+    width:300px;
+    /* margin-left:500px;
+    margin-top: 100px; */
+    margin: 100px auto;
+    /* 바깥여백 위아래 100px 좌우 auto(중앙정렬) */
+    text-align: center;
+    /* 글자를 중앙정렬 */
+    padding: 50px 0; 
+    /* 안여백 */
+}

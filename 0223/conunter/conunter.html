@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+.counter{
+  float:left;
+  padding: 6px;
+  border:1px solid #487431;
+  border-radius:5px;
+  background:#527f40;
+  background: linear-gradient(#8bc04c, #527f40);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+.counter span{
+  float:left;
+	width:22px;
+	height:30px;
+	margin:0;
+	padding:0;
+	text-indent:-9999px;
+	font-size:0px;
+	background:url(counter-sprite.png) no-repeat 0 0; 
+}
+.counter .digit-1{
+  background-position: 0 -30px;
+  animation: ds1 3s 1;
+}
+.counter .digit-2{
+  background-position: 0 -60px;
+  animation: ds2 3s 1;
+}
+.counter .digit-3{
+  background-position: 0 -90px;
+  animation: ds3 3s 1;
+}
+.counter .digit-4{
+    background-position: 0 -120px;
+    /* animation: ds1 3s 1; */
+    animation-name:ds4;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.counter .digit-5{
+	background-position:0 -150px;
+	animation-name:ds5;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+.counter .digit-6{
+	background-position:0 -180px;
+	animation-name:ds6;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+.counter .digit-7{
+	background-position:0 -210px;
+	animation-name:ds7;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+	
+
+.counter .digit-8{
+	background-position:0 -240px;
+	animation-name:ds8;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+
+.counter .digit-9{
+	background-position:0 -270px;
+	animation-name:ds9;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+.counter .digit-0{
+	background-position:0 -300px;
+	animation-name:ds0;
+	animation-duration:3s;
+	animation-iteration-count:1;
+}
+
+@keyframes ds1{
+  0%{background-position: 0 0;}
+  100%{background-position: 0 -30px;}
+}
+@keyframes ds2{
+  0%{background-position: 0 0;}
+  100%{background-position: 0 -60px;}
+}
+@keyframes ds3{
+	from{background-position:0 0;}
+	to{background-position:0 -90px;}
+}
+@keyframes ds4{
+	from{background-position:0 0;}
+	to{background-position:0 -120px;}
+}
+@keyframes ds5{
+	from{background-position:0 0;}
+	to{background-position:0 -150px;}
+}
+@keyframes ds6{
+	from{background-position:0 0;}
+	to{background-position:0 -180px;}
+}
+@keyframes ds7{
+	from{background-position:0 0;}
+	to{background-position:0 -210px;}
+}
+@keyframes ds8{
+	from{background-position:0 0;}
+	to{background-position:0 -240px;}
+}
+@keyframes ds9{
+	from{background-position:0 0;}
+	to{background-position:0 -270px;}
+}
+@keyframes ds0{
+	from{background-position:0 0;}
+	to{background-position:0 -300px;}
+}
+
+
+</style>
+</head>
+<body>
+  <div class="counter">
+		<span class="digit-9">9</span>
+		<span class="digit-3">3</span>
+		<span class="digit-7">7</span>
+		<span class="digit-5">5</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+html{overflow-y:scroll;}
+*{margin: 0; padding: 0;}
+
+body{font-family: "맑은 고딕", Dotum, "돋움", sans-serif}
+body, div, ul, li, dl, dd, dt, ol, p, h1,h2, h3, h4, h5, h6,form{margin:0; padding: 0; }
+ul, ol, dl, li{list-style: none;}
+img{border: 0; vertical-align: top;}
+ul{list-style: none; margin: 0; padding: 0;}
+a{text-decoration: none; color: #333333;}
+a:link{color: #333333;}
+a:visited{color: #333333;}
+.fl{float: left;}
+/* 
+float:left가 적용된곳 - .fl
+#nav > li > div (ex) - #onlinestudy,#magazine 등등
+.m_width>li 
+*/
+
+
+#nav > li > div{
+    display: none;
+}
+#nav > li:nth-child(1) > div{
+  
+}
+#nav > li:nth-child(2) > div{
+    /* display: block; */
+}
+
+
+#nav > li:hover > div{
+    display: block;
+}
+
+/* #nav > li:nth-child(1)
+로고이미지이므로 2번째부터 코딩 */
+/*상단메뉴바*/
+#lnb{
+    position: relative;
+    height:94px;
+    background-color: #fff;
+    z-index: 99;
+}
+#lnb #nav{
+    width:1200px;
+    margin: 0 auto;
+}
+#nav li{
+    float:left;
+    height:94px;
+    margin: 0 38px;
+}
+#nav > li > a{
+    display: block;
+    text-decoration: none;
+    color:#333;
+    line-height: 94px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+  #nav li#freesamLogo{
+    float: left;
+    width:181px;
+    margin: 0; padding: 0;
+  }
+
+
+/* 2depth */
+/* .sub 100% */
+#nav > li > div{
+    position: absolute;
+    top:94px;
+    left:0;width:100%;
+    background-color: #f4f4f4;
+    color:#333;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    z-index: 998;
+}
+#nav > li > div ul.m_width{
+    width:1200px;
+    margin: 0 auto;
+}
+#nav li ul li.m1_tit{
+    width:163px;
+    border-left:none !important ;
+    padding: 0;
+  }
+#nav li ul li{
+    width:193px;
+}
+#nav li div#onlinestudy li{
+    height:328px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li div#onlinestudy li.subInDiv01{
+    height:289px;
+    margin: 0;
+    padding: 44px 0 0 10px;
+  }
+  #nav li div#onlinestudy li img{
+    float:left;width:135px;
+    height:135px;
+    margin:10px 0 0 10px;
+  }
+
+  #nav li div#magazine li{
+    height:308px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li div#magazine  li.subInDiv01{
+    height:269px;
+    margin: 0;
+    padding: 44px 0 0 10px;
+  }
+  #nav li div#magazine  li img{
+    float:left;width:135px;
+    height:135px;
+    margin:10px 0 0 10px;
+  }
+
+  #nav li div#playground li{
+    height:45px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li div#customer01 li{
+    height:45px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li div#mypage li{
+    height:192px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li div#mypage li img{
+    float:left;width:135px;
+    height:135px;
+    margin:10px 0 0 12px;
+  }
+  #nav li div#parents li{
+    height:45px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+  #nav li ul li .redpanS{
+    margin-top: 30px;
+  }
+  #nav li ul li h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color:#e95a65;
+    padding-top: 2px;
+  }
+  #nav li ul li dl dt a{
+    color:#333; font-size: 1em;
+    font-weight: bold;line-height: 180%;
+  }
+  #nav li ul li dl dd a{
+    color:#777; font-size: 0.8em;
+    font-weight: bold; line-height: 170%;
+    background: url(../images/blet.png) no-repeat 0 50%;
+    padding-left:10px ;
+  }
+  #nav li ul li h3 a{
+    color:#097a84;
+    font-weight: bold;
+    line-height: 200%;
+    margin-bottom: 3px;
+  }

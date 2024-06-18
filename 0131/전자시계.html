@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @font-face {
+        font-family: LABdigital;
+        src: url(fonts/LAB디지털.ttf);
+    }
+    body{
+        font-family: 'LABdigital';
+    }
+    *{margin: 0;padding: 0;}
+    #clock{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 100px auto 0;
+        border:  1px solid #333;
+    }
+    #clock img{
+        position: absolute;
+        top: 0;left: 0;
+        display: block;
+    }
+</style>
+<script>
+window.onload = function(){    //html과 css가 모두 로드된후 실행   
+    autotime();
+    setInterval(autotime,1000); //1000=1초 ,60000=1분,3600000=1시간
+    // autotime();
+    function autotime(){
+        var today = new Date();
+        //alert(today);
+        var y = today.getFullYear();
+        var m = today.getMonth()+1;
+        var d = today.getDate();
+        var n = today.getDay();
+        
+        var yoil;
+        if(n == '0'){
+            yoil = "일";
+        }else if(n == "1"){
+        yoil ="월";
+        }else if(n == "2"){
+            yoil = "화";
+        }else if(n == "3"){
+            yoil = "수";
+        }else if(n == "4"){
+            yoil = "목";
+        }else if(n == "5"){
+            yoil = "금";
+        }else{
+            yoil="토";
+        }
+    // alert(yoil);
+
+
+        var h = today.getHours();
+        var m1 = today.getMinutes();
+        var s = today.getSeconds();
+
+        //document.write(y+"년 "+m+"월 "+d+"일 "+yoil+"요일 "+h+"시 "+m1+"분 " +s+"초");
+        
+        document.getElementById('year').innerHTML = y;
+        //document.querySelector('#year').innerHTML = y;
+        //$('#year').text(y); -제이쿼리방식
+        document.getElementById('month').innerHTML = m;
+        document.getElementById('date').innerHTML = d;
+        document.getElementById('nday').innerHTML = yoil;
+        document.getElementById('hour').innerHTML = h;
+        document.getElementById('minute').innerHTML = m1;
+        document.getElementById('second').innerHTML = s;
+
+
+
+
+        var si = document.getElementById('hour1');
+        var bun = document.getElementById('minute1')
+        var cho = document.getElementById('second1')
+
+        // date 구한 시간은 총 24시간 
+        // 아날로그 시계는 한바퀴 12시간이므로 
+        // 오후 시간을 구하면 예시) 14-12 = 2 구해야함
+
+        if(h > 12 ) h = h - 12;
+
+        var dh = (h * 30) + (m1 / 2);
+        var dm = m1 * 6;
+        var ds = s * 6;
+
+        si.style.transform = "rotate("+dh+"deg)"
+        bun.style.transform = "rotate("+dm+"deg)"
+        cho.style.transform = "rotate("+ds+"deg)"
+
+
+        }
+}
+</script>
+
+
+</head>
+<body>
+    <h1>
+        <span id="year">0000</span>년
+        <span id="month">00</span>월
+		<span id="date">00</span>일
+		<span id="nday">0</span>요일
+        <span id="hour">00</span>시
+		<span id="minute">00</span>분
+		<span id="second">00</span>초
+    </h1>
+
+    <div id="clock">
+        <img src="img/clock.png" alt="시계" id="clock1">
+        <img src="img/h.png" alt="" id="hour1">
+        <img src="img/m.png" alt="" id="minute1">
+        <img src="img/s.png" alt="" id="second1">
+    </div>
+
+
+</body>
+</html>

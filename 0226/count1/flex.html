@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+  display: flex;
+}
+
+.item1 {
+  flex: 1 0 0; /* Item 1은 늘어나지만, 축소는 허용하지 않음 */
+  background-color: lightblue;
+}
+
+.item2 {
+  flex: 1 1 0; /* Item 2는 늘어나고, 필요에 따라 축소됨 */
+  background-color: lightcoral;
+}
+</style>    
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+      </div>
+</body>
+</html>

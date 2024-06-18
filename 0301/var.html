@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var로 변수 선언 및 초기화
+        var varVariable = "초기값";
+        console.log(varVariable); // 출력: 초기값
+
+        // var로 같은 이름의 변수 재선언 및 재할당
+        var varVariable = "재선언된 값";
+        console.log(varVariable); // 출력: 재선언된 값
+
+        // var로 선언된 변수 재할당
+        varVariable = "재할당된 값";
+        console.log(varVariable); // 출력: 재할당된 값
+
+        // var의 함수 레벨 스코프 확인
+        function testVarScope() {
+            var insideVar = "함수 내부 값";
+        }
+        // console.log(insideVar); // ReferenceError(참조 불가) 발생 에러 발생
+
+        // var은 블록 레벨 스코프를 무시
+        if (true) {
+            var blockVar = "블록 내부 값";
+        }
+        console.log(blockVar); // 출력: 블록 내부 값
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

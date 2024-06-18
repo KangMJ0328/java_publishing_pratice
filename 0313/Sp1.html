@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //배열에서 스프레드 연산자 사용
+        //배열선언
+        const array1 = [1,2,3];
+        const array2 = [4,5,6];
+        //배열합치기
+        const combiendArray = [...array1,...array2];
+        console.log(combiendArray);
+
+        //배열 복사 
+        const originalArray =[10,20,30];
+        const copiedArray = [...originalArray];
+        console.log(copiedArray);
+
+        //배열 요소 추가
+        const newArray = [...originalArray,40,50];
+        console.log(newArray);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

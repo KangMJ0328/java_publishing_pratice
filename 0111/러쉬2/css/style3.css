@@ -1,0 +1,125 @@
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+a{color:#000;text-decoration:none;}
+#wrap{}
+.header_out{
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+/* .header_out -  #header 있던 relative를 이동*/
+#header{
+    width:1200px;
+    height:250px;
+    
+    border: 1px solid #333;
+    margin: 0 auto;
+   
+}
+#logo{
+    position: absolute;
+    border: 2px solid #333;
+    width:250px;
+    height:90px;
+    left:50%;
+    top:50%;
+    margin-left: -125px;
+    margin-top: -45px;
+}
+#logo img{
+    display: block;
+    width:100%;
+    height:100%;
+}
+#gnb{
+    /* absolute -> float:right */
+    float: right;
+    margin-top: 20px ;
+    margin-right: 15px;
+    /* position: absolute;
+    top:20px;
+    right:15px; */
+}
+#gnb ul li{
+    float: left;
+    padding: 0 10px;
+    background: url(../images/bar.gif) no-repeat 100% 50%;
+    /* bar를 오른쪽 중앙에 넣어라 */
+}
+#gnb ul li:nth-child(4){
+    background: none;
+}
+/* #gnb ul li:last-child 대용가능 */
+
+#nav_Icon{
+     /* absolute -> float:left */
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    /* position: absolute;
+    top:20px;
+    left:15px; */
+}
+
+#nav_Icon ul li{
+    float: left;
+    margin-left: 15px;
+}
+
+.main_nav{
+    /* 넓이 100%; */
+    position: absolute;
+    width: 100%;
+    top:220px;
+    left:0;
+}
+.main_nav>ul{
+    /* 넓이 1200 중앙정렬 */
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    /* 메뉴가 shadow보다 위로 올라오기 위해서
+     position 과  z-index*/
+}
+.main_nav .shadow{
+    width:100%;
+    /* background-color: yellow; */
+    background-color: pink;
+    position: absolute;
+    left:0;
+    top:30px;
+    height:0px;
+
+}
+.main_nav ul:hover +  .shadow {
+    height:260px;
+}
+.main_nav>ul>li{
+    float: left;
+    text-align: center;
+}
+.main_nav ul li a{
+    display: block;
+    width:200px;
+    height:30px;
+    line-height: 30px;;
+}
+.main_nav ul li ul{
+    background-color: pink;
+    /*흰색의 불투명도 0.7*/
+    position: absolute;
+    display: none;
+    height:240px;
+    padding: 10px 0;
+}
+.main_nav ul:hover  ul{
+    display: block;
+}
+
+#main{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}

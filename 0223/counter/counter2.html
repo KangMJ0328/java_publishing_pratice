@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            //어떤요소의 숫자값을 애니메이션화 하는 예제
+            var number = $('#num').text(); //text() 숫자나 글자를 읽어와라
+            $({percent:0}).animate({percent:number},{
+                duration:3000,
+                progress:function(){
+                    var now = this.percent;
+                    $('#num').text(Math.ceil(now)); //소수점이하 올린다.
+                    //$('#num').text(Math.floor(now)); 소수점 이하 버린다.
+                    //Math.round(now); 소수점이하 반올림
+                }
+            });
+        });
+        //{percent:0} : 초기값이 0인 객체를 생성
+        //{percent:111} : 최종값이 0인 객체를 생성
+        // 애니메이션 지속시간 duration:3000 (3초) 
+        // progress 함수는 애니메이션 진행중에 호출
+        // 현재 진행상태를 나타내는 percent 속성을 사용하여 
+        // html #num 요소의 내용을 업데이트 
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="num">75</h1>
+</body>
+</html>

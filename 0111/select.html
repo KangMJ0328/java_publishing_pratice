@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+<style>
+    select{
+        width:200px;/*원하는 너비설정*/
+        padding: 0.8em 0.5em;/*여백으로 높이 설정*/
+        border:1px solid #999;
+    }
+    select{
+        appearance: none;/*화살표 사라짐*/
+        background: url(images/arrow.jpg) no-repeat 95% 50%;
+    }
+    select:focus{
+        background: url(images/arrow_1.jpg) no-repeat 95% 50%;
+    }
+    section option{
+        padding-top: 10px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+
+</style>    
+</head>
+<body>
+    <p>
+        과목선택
+        <select class="select1">
+            <option value="html5">html5</option>
+            <option value="css3">css3</option>
+            <option value="javascript">javascript</option>
+            <option value="Query">jQuery</option>    
+        </select>
+    </p>
+</body>
+</html>

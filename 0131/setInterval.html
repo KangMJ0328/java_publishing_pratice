@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    // setInterval()메서드는 코드를 일정시간 간격으로 반복
+var addNum = 0;
+var subNum = 1000;
+    // var setInterval(function(){실행내용},3000);
+    // var setInterval(함수명,3000);
+    // clearInterval() 메서드는 setInterval()을 취소합니다.
+var auto_1 = setInterval(function(){
+                addNum++;
+                console.log("addNum: " + addNum)
+            },3000);
+
+var auto_2 = setInterval(function(){
+                subNum--;
+                console.log("addNum: " + subNum)
+            },3000);
+</script>
+</head>
+<body>
+    <h1>일정 시간 간격으로 값 증감시키기</h1>
+    <p>콘솔 패널을 열어 확인하세요</p>
+    <button onclick="clearInterval(auto_1)">증가 정지</button>
+</body>
+</html>

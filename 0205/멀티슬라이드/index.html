@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        li {list-style: none;}
+        .slide_wrapper{
+            position: relative;
+            width: 990px;
+            margin: 0 auto ;
+            height: 300px;
+            overflow: hidden;
+            top: 50px;
+        }
+
+        .slide_wrapper .slides{
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: left 0.5s ease-out;
+        }
+        .slide_wrapper .slides li{
+            float: left;
+            margin-right: 30px;
+        }
+        .slide_wrapper .slides li:last-child{margin-right: 0;}
+
+        .constrols{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .constrols span{
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+
+    </style>
+    <script src="./js/script.js"> </script>
+</head>
+<body>
+    <div class="slide_wrapper">
+        <ul class="slides">
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+            <li><img src="https://placehold.it/300X300" alt=""></li>
+        </ul>
+    </div>
+    <p class="constrols">
+        <span class="prev">prev</span>
+        <span class="next">next</span>
+    </p>
+</body>
+</html>

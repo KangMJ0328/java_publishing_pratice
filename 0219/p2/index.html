@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(function(){
+    $(window).scroll(function(){
+        var sct = $(window).scrollTop();
+        console.log(sct);
+        if(sct >=1 && sct <=300){
+            $('.area1').addClass('on');
+        }
+        if(sct>=300 && sct <=600){
+            $('.area2').addClass('on');
+        }
+        if(sct>=800 && sct <=1100){
+            $('.area3').addClass('on');
+        }
+        if(sct>=1300 && sct <=1600){
+            $('.area4').addClass('on');
+        }
+        if(sct>=1800 && sct <=2100){
+            $('.area5').addClass('on');
+        }
+        if(sct>=2300 && sct <=2600){
+            $('.area6').addClass('on');
+        }
+
+
+
+    });
+
+
+});
+    </script>
+</head>
+<body>
+    <div class="area1 ">메인1</div>
+    <div class="area2">메인2</div>
+    <div class="area3">메인3</div>
+    <div class="area4">메인4</div>
+    <div class="area5">메인5</div>
+    <div class="area6">메인6</div>
+</body>
+</html>

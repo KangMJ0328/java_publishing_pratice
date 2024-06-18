@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    var today = new Date();
+    //alert(today);
+    var y = today.getFullYear();
+    var m = today.getMonth()+1;
+    var d = today.getDate();
+    var n = today.getDay();
+    
+    var yoil;
+    if(n == '0'){
+        yoil = "일";
+    }else if(n == "1"){
+      yoil ="월";
+    }else if(n == "2"){
+        yoil = "화";
+    }else if(n == "3"){
+        yoil = "수";
+    }else if(n == "4"){
+        yoil = "목";
+    }else if(n == "5"){
+        yoil = "금";
+    }else{
+        yoil="토";
+    }
+    alert(yoil);
+  
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

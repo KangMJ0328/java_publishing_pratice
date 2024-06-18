@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 1200px;
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+#header{
+    height:120px;
+    background-color: beige;
+}
+#left_sidebar{
+    width:250px;
+    height:600px;
+    background-color: aqua;
+    float: left;
+}
+#section{
+    width:800px;
+    height:600px;
+    background-color:chartreuse;
+    float: left;
+}
+#right_sidebar{
+    width:150px;
+    height:600px;
+    background-color:tan;
+    float: left;
+}
+#footer{
+    clear: both;
+    height:100px;
+    background-color: #333;
+    color: white;
+}

@@ -1,0 +1,78 @@
+*{margin: 0;padding: 0;}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+body{display: block;}
+ul{list-style: none;}
+a {
+    text-decoration: none;
+    color: #000;
+}
+#wrap{
+    width: 1300px;
+    border: 1px solid #333;
+    margin: 100px auto 0;
+}
+#wrap > h2{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#banner{
+    width: 78px;
+    height: 26px;
+    margin-left: 10px;
+    float: left;
+}
+#banner li{
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
+    float: left;
+    z-index: 101;
+}
+#banner li a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    z-index: 101;
+}
+#banner li:nth-child(1) a{
+    background: url(../img/btn1.png)no-repeat 0 0;
+    /* text-indent: -9999px; */
+
+}
+#banner li:nth-child(2) a{
+    background: url(../img/btn1.png)  no-repeat -26px 0 ;
+    /* text-indent: -9999px; */
+}
+#banner li:nth-child(2).on a {
+    background: url(../img/btn1.png) no-repeat -52px 0;
+}
+#banner li:nth-child(3) a {
+    background: url(../img/btn1.png) no-repeat -78px 0;
+    /* text-indent: -9999px; */
+}
+
+#slide {
+    width: 1188px;
+    height: 50px;
+    float: left;
+}
+#frame {
+    width: 1188px;
+    height: 50px;
+    /* overflow: hidden; */
+}
+.ban{
+    width: 5200px;
+    background-color: yellow;
+}
+.ban>li{
+    width: 198px;
+    height: 48px;
+    float: left;
+    margin-top: 1px;
+}

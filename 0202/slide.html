@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{margin: 0;padding: 0;}
+    header{
+        width: 100%;
+        max-width: 1920px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: #ccc;
+    }
+    .slide-container{
+        width: 100%;
+        max-width: 1920px;
+        height: 480px;
+        position: relative;
+    }
+    .slider{
+        
+        display: flex;
+    }
+    button{
+        cursor: pointer;
+        padding: 10px;
+    }
+    .prev{
+        text-indent: -9999px;
+        background: url(images/prev1.png)no-repeat ;
+        overflow: hidden;
+    }
+    .next{
+        text-indent: -9999px;
+        background: url(images/next1.png)no-repeat ;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="slide-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">Previous</button>
+        <button class="next" onclick="nextSlide()">Next</button>
+    </div>
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide'); // img slide1,slide2,slide3.jpg들을 변수 slides에 저장
+
+        let currentIndex = 0; //변수 선언 값은 0 
+        
+        function showSlide(index){
+            if(index <0){ // 매개변수가 0보다 작을때 
+                currentIndex = slides.length-1; // slides.length=3 인데 -1 붙었으니 배열요소 0,1,2의 2가된다 
+                                                //즉 첫번쨰사진에서 prev눌르면 배열요소의 3번쨰이자 2인 slide3.jpg가 나옴 
+
+            }else if (index >= slides.length){ // 3보다 같거나 클때 예를들어 3번째사진일때
+                currentIndex = 0; // 위에서 말했듯이 배열요소 0 은? slide1.jpg 이건 3번째사진에서 next눌렀을때 1번 사진으로돌아가게하려고 만든 것
+            }else{
+                currentIndex = index;
+            }
+
+            const transformValue = -currentIndex * 100 + '%'; // width가 100%로 지정되있으니 첫번째사진이보이는곳은 100% 
+                                                            //이동하려면 첫화면 기준으로 -100% -200% 줘야겠죠 -100%주면 그 화면이 기준이되는게아니고 무조건 첫화면 기준
+            slider.style.transform = "translateX("+transformValue+")"; // 이건 이동하려고 메서드 사용한거고 
+        }
+
+        function prevSlide(){
+            showSlide(currentIndex - 1);  // function showSlide(index) =currentIndex -1 = index 만약 0이라고 가정하면 -1이되겠네 
+                                        //그러면 if(index<0) 여기에 해당되는 조건이네 이해안되면 위에 함수 다시 돌아가서 보시오
+        }
+        function nextSlide(){
+            showSlide(currentIndex + 1);
+        }
+    </script>
+</body>
+</html>

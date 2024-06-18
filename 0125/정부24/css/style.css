@@ -1,0 +1,140 @@
+*{margin:0;padding:0;}
+
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+ul,li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+nav{
+    width:100%;
+    min-width: 1200px;
+    position: relative;
+    background-color: #fff;
+}
+nav #nav_left{
+    position:absolute;
+    width:129px;
+	height:43px;
+	top:7px;
+    left:50%;
+    margin-left:-600px;
+}
+nav #nav_right{
+    position:absolute;
+    width:200px;
+	height:43px;
+	top:7px;
+    left:50%;
+    margin-left: 500px;
+    text-align:center;
+}
+nav #nav_right p{
+    position:relative;
+	background-color:#eb193a;
+	border-radius:20px;
+}
+nav #nav_right p a{
+	font-weight:bold;
+	font-size:14px;
+	line-height:43px;
+	margin-left:5px;
+	color:#fff;
+}
+nav #nav_right p a img{
+	position:absolute;
+	top:8px; left:20px;
+}
+
+nav .box{
+    width:100%;
+	height:58px;
+	box-shadow:1px 3px 10px rgba(3,48,117,0.3);
+	z-index:100;
+	position:relative;
+}
+
+nav .box > ul{
+    width:800px;
+	margin:0 auto;
+	text-align:center;
+}
+
+nav .box > ul > li{
+    float: left;
+}
+nav .box > ul > li >.sub{
+    /* display: none; */
+}
+
+nav .box > ul > li:nth-child(3) >.sub{
+    /* display: block; */
+}
+nav .box > ul > li > a{
+    display: block;
+    width:150px;
+	padding:15px 8px;
+	font-weight:bold;
+	font-size:21px;
+}
+nav .sub{
+    position: absolute;
+    left:0;
+	top:58px;
+	width:100%;
+    height:0px;
+    overflow:hidden;
+	z-index:10;
+	background-color:#fff;   
+}
+
+nav >.box>ul>li:hover .sub{
+	height:350px;
+	border-bottom:3px solid #033075;
+	border-top:1px solid #eee;
+}
+
+nav .sub .sub_contents{
+    width:800px;
+	margin:0 auto;
+	text-align:left;
+}
+nav .sub .sub_contents div{
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font-size:25px;
+	padding-top:60px;
+}
+nav .sub .sub_contents div img{
+    width:150px;
+}
+nav .sub .sub_contents ul{
+    float: left;
+    vertical-align: top;
+    width:170px;
+    margin-left: 80px;
+    margin-top:30px;
+}
+nav .sub .sub_contents  ul li{
+	padding:10px 0;
+	height:20px;
+	border-bottom:1px solid #eee;
+}
+nav .sub .sub_contents  ul li a{
+	font-size:15px;
+	font-weight:bold;
+}
+nav .sub .sub_contents  ul li.menu{
+	background-color:#c8e2ff;
+	border-radius:20px;
+	text-align:center;
+	padding:5px 0;
+	border-bottom:none;
+}

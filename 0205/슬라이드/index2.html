@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/wire3.css">
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo">이젠 컴퓨터<br>아카데미</h1>
+            <nav>
+                <ul>
+                    <!-- li*4>a[href=#]{MENU-$} -->
+                    <li><a href="#">MENU-1</a>
+                        <!-- ul>li*4>a[href=#]{Submenu-$} -->
+                        <ul>
+                            <li><a href="#">Submenu-1</a></li>
+                            <li><a href="#">Submenu-2</a></li>
+                            <li><a href="#">Submenu-3</a></li>
+                            <li><a href="#">Submenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-2</a>
+                        <ul>
+                            <li><a href="#">Submenu-1</a></li>
+                            <li><a href="#">Submenu-2</a></li>
+                            <li><a href="#">Submenu-3</a></li>
+                            <li><a href="#">Submenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-3</a>
+                        <ul>
+                            <li><a href="#">Submenu-1</a></li>
+                            <li><a href="#">Submenu-2</a></li>
+                            <li><a href="#">Submenu-3</a></li>
+                            <li><a href="#">Submenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU-4</a>
+                        <ul>
+                            <li><a href="#">Submenu-1</a></li>
+                            <li><a href="#">Submenu-2</a></li>
+                            <li><a href="#">Submenu-3</a></li>
+                            <li><a href="#">Submenu-4</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </header>
+        <div id="img_slide">
+            <ul id="banner">
+                <li style="left : 0px"><a href="#"><img src="images/a1.jpg" alt=""></a></li>
+                <li style="left : 1200px"><a href="#"><img src="images/a2.jpg" alt=""></a></li>
+                <li style="left : 2400px"><a href="#"><img src="images/a3.jpg" alt=""></a></li>
+                <li style="left : 3600px"><a href="#"><img src="images/a1.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <section>
+            <article class="notice"></article>
+            <article class="banner"></article>
+            <article class="icons"></article>
+
+        </section>
+        <footer>
+            <div class="foot_logo"></div>
+            <div class="foot_menu"></div>
+            <div class="foot_copy"></div>
+        </footer>
+    </div>
+
+    <script>
+        var list = document.getElementById('banner');
+        var listLi = document.querySelectorAll("#banner li");
+        var li_width = document.querySelector('#banner > li').offsetWidth;
+        
+
+        var num = 0;
+
+        function autoplay(){
+            if (num === 3){
+            num = 0;
+            list.style.transition = 'none';
+            list.style.marginLeft = '0px';
+        }
+            setTimeout(function(){
+                num ++;
+                list.style.transition = 'margin-left .5s'
+                list.style.marginLeft = -li_width * num + 'px';
+                e.preventDefault(); // return false 와 같음
+            },50);
+        }
+        setInterval(autoplay, 2000);
+
+    </script>
+</body>
+</html>

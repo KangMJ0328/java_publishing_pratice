@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ul::after{
+    content: '5번입니다.';
+}
+ul::before{
+    content: '0번입니다.';
+}
+ul li:first-child::before{
+    content:'abcd';
+}
+ul li:first-child::after{
+    content:'efgh';
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li>1번입니다.</li>
+        <li>2번입니다.</li>
+        <li>3번입니다.</li>
+        <li>4번입니다.</li>
+    </ul>
+</body>
+</html>

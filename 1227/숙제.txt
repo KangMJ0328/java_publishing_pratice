@@ -1,0 +1,33 @@
+1. vscode 
+extension - open browser , rename tag
+
+2. ! tab
+3.  
+p태그 , h1태그 , strong태그 em태그
+span , div 
+
+4. 이미지 넣기
+5. 비디오넣기 
+6. 표 만들기 완벽히 숙지
+7. 폼태그 완전 숙지
+8. 167페이지 
+   css 디자인 입히기
+   외부스타일 만들기
+9 .구글 폰트 사용해서 나눔고딕체 써보기
+10. ul, li
+11 background-color
+    color
+font 관련
+font-weight
+font-style
+232p 한눈에 정리하기
+
+
+
+
+ 
+
+
+
+
+

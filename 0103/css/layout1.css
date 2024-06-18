@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0;}
+#container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+#header{
+    width: 100%;
+    height:120px;
+    background-color: burlywood;
+}
+#sidebar{
+    width:300px;
+    height:600px;
+    background-color: yellow;
+    float: left;
+}
+#section{
+    width:900px;
+    height:600px;
+    background-color: yellowgreen;
+    float:right;
+}
+#footer{
+    clear:both;    
+    width:100%;
+    height:100px;
+    background-color: #333;
+    color:#fff;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1부터 100까지의 소수 숫자</h1>
+    <script>
+        //소수 2부터 시작 
+        for(i=2;i<101;i++){
+            var c = 0; // 밑의 if문까지 끝나고 다시 초기화 
+            for(j=1;j<=i;j++){
+                if(i %j==0){
+                    c++ // i의 숫자만큼 j가 증가하고 i와 j를 나눴을때 0이되는것들은 카운트 
+                        //ex)i가 4일때 j는 1,2,3,4 까지 세니까 1, 2 , 4 총 세번 카운트 즉 c는 3번 더해서 3이된다.
+                }
+
+            }
+            if(c==2){ // 제일 중요 위의 과정을 거쳤을때 소수들만 나눠서 0으로 떨어지는게 두번밖에없으니 카운트 2가될때 i값을 출력 즉 소수가 된다.
+                document.write(i+"  ")}
+        }
+        
+    </script>
+</body>
+</html>

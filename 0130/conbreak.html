@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var i,j;
+        //구구단을 출력하되 짝수 단만 출력하는 프로그램 2단은 2x2까지 8단까지만 출력
+        for(i = 2; i <= 9 ; i++){
+            document.write("<div>")
+            document.write("<h3>"+i+"단<h3>");      
+            for(j = 1; j <=9 ; j++) {
+                if(i==2 && j>=3){
+                    continue;
+                }
+                document.write(i+" X "+ j + " = " + i*j + "<br/>" );
+            }
+            document.write("</div>")   
+            if(i === 8) break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }  
+#contents{
+    width:800px;
+    height:500px;
+    background:url(../images1/bg.jpg) no-repeat ;
+    background-size: cover;
+    margin:100px auto;
+    border: 5px solid red;
+    position: relative;
+}
+h1{
+    color:#fff;
+    font-size:120px;
+    text-shadow: 2px 3px 0 #000; 
+    position:absolute;
+    right:100px;
+    bottom:100px;   
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 비동기 동작을 수행하는 함수
+        function performAsyncOperation(callback) {
+            console.log("비동기 동작을 시작합니다.");
+            
+            setTimeout(function() {
+                console.log("비동기 동작이 완료되었습니다.");
+                // 콜백 함수 호출
+                callback();
+            }, 2000); // 2초 후에 콜백 함수 호출
+        }
+
+        // 콜백 함수 정의
+        function callbackFunction() {
+            console.log("콜백 함수가 호출되었습니다.");
+        }
+
+        // 비동기 동작을 수행하는 함수 호출
+        performAsyncOperation(callbackFunction);
+
+        console.log("메인 프로그램이 진행됩니다.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

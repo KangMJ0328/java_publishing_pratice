@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{margin: 0;padding:0;} 
+ul{list-style: none;}   
+header{
+    width:1200px;
+    height:200px;
+    margin: 0 auto;
+}
+#img_slide{
+    width:1200px;
+    height:300px;
+    margin: 0 auto; 
+}
+#img_slide ul{
+    width:4800px;
+    height:300px;
+}
+#img_slide ul li{
+    float: left;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="img_slide">
+        <ul id="banner">
+            <li><a href="#"><img src="images/a1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/a2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/a3.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <script>
+     var list = document.getElementById('banner');
+     var listLi = document.querySelectorAll('#banner li');
+     var show_num =1;
+     var total =3; 
+     var li_width = document.querySelector("#banner > li").offsetWidth;
+     // alert(li_width);  li_width =1200
+     var copyobj = listLi[0].cloneNode(true);
+     list.append(copyobj); //첫번째 사진을 맨뒤로 (복제해서)추가
+
+     var num = 0;
+     function autoplay(){
+        if(num ===3){
+            num=0;
+            list.style.transition = 'none';
+            list.style.marginLeft = '0px';
+        }
+        setTimeout(function(){
+            num++;
+            list.style.transition = 'margin-left .5s';
+           list.style.marginLeft = -li_width * num + "px";
+        },50);
+     }   
+     setInterval(autoplay, 3000);
+    </script>
+
+</body>
+</html>

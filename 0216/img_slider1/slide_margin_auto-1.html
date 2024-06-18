@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide_margin_auto</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(function(){
+         var i = 0;
+         var clone = $(".img_slide ul li").eq(0).clone();
+         $(".img_slide ul").append(clone);
+         setInterval(function(){
+            i++;
+            if(i == 5){
+                //만약 i가 5와 같다면
+                $(".img_slide ul").stop().animate({
+                    "margin-left":-i*100+"%"
+                    //0.6초간 ul 을 margin-left로 -i00%만큼 이동
+                },600,function(){
+                    //-500만큼 margin-left를 실행시킨 직후
+                    //ul 에 css를 margin-left:0으로 실행.
+                    //transition이 없기 때문에 순간적으로 위치가 바뀔 것으로 사료됨.
+                    $(".img_slide ul").css("margin-left",0);
+                });
+                i = 0;
+            }else{
+
+                $(".img_slide ul").stop().animate({
+                    "margin-left":-i*100+"%"
+                },600);
+            }
+         },2000);
+
+        });
+
+    </script>
+    <style>
+	*{margin:0;padding:0;}
+	ul,li{list-style:none;}
+	a{text-decoration:none;color:#000;}
+	.cf:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+    #wrap{
+        width:800px;
+        margin: 0 auto;
+    }
+    header{
+		width:100%;
+		height:100px;
+		background-color:salmon;
+	}
+    .img_slide{
+		width:100%;
+		height:450px;
+		position:relative;
+	}
+    .img_slide ul{
+		width:600%; 
+       /* 4000px */
+	}
+    .img_slide ul li{
+		width:16.66%;
+        /* 800px */
+		float:left;
+	}
+	.img_slide ul li img{
+		width:100%;
+		height:auto;
+		display:block;
+	}
+    .img_slide ol{
+		position:absolute;
+		left:50%;
+		transform:translateX(-50%);
+		bottom:15px;
+	}
+    .img_slide ol li{
+		width:15px;
+		height:15px;
+		float:left;
+		margin:0 5px;
+	}
+    .img_slide ol li a{
+		display:block;
+		width:15px;
+		height:15px;
+		border-radius:50%;
+		background-color:#fff;
+	}
+	.img_slide ol li.on a{
+		background-color:#000;
+	}
+
+    </style>
+
+
+</head>
+<body>
+    <div id="wrap">
+		<header></header>
+		<nav></nav>
+		<div class="img_slide">
+			<ul class="cf">
+				<li><img src="./images/photo1.JPG" alt=""/></li>
+				<li><img src="./images/photo2.JPG" alt=""/></li>
+				<li><img src="./images/photo3.JPG" alt=""/></li>
+				<li><img src="./images/photo4.JPG" alt=""/></li>
+				<li><img src="./images/photo5.JPG" alt=""/></li>
+			</ul>	
+		</div>
+	</div>
+</body>
+</html>

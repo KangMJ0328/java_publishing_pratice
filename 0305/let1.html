@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function example(){ //함수 스코프
+            if (true){ // 블럭 스코프
+                let x = 10;
+                console.log(x);
+            }
+            
+
+        }
+        example();
+        // var - 함수스코프 내에서만 유효
+        // let은 블럭스코프 내에서만 유효
+        // console.log(x);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+크롬 창을 열고  vscode 입력
+
+
+vscode실행
+file - new text file 
+클릭후  - 열리면  file -save as
+basic.html  저장
+
+!  타이핑하고 tab키 누르면
+html 기본형식이 자동완성된다.
+ctrl + /  하면 주석
+- 실행은 안되는 메모
+
+
+왼쪽  Extention 아이콘(ctrl + shift + x)
+-open in browser(크롬이나 엣지 창으로 
+  html 열기) - 단축키 alt + b
+
+Extention - auto rename tag 설치
+앞쪽 태그를 변경하면 뒤에 닫기 태그도 변경
+
+
+
+
+

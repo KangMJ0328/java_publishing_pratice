@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position1</title>
+<style>
+*{margin: 0;padding: 0;}
+body{height: 3000px;}
+.box{
+    width:150px;
+    height:150px;
+}
+.box1{
+   position: fixed;
+    background-color: burlywood;
+    bottom: 50px;
+    right:50px;
+}
+.box2{
+    background-color: blueviolet;
+}
+.box3{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: chartreuse;
+}
+.box4{
+    background-color: coral;
+}
+/* absolute */
+/* 1. 기준위치 : 부모가 기준(여기서는 전체 브라우저가 기준) */
+/* 2. 자리값이 없고, 다른 컨텐츠와 겹칠수 있다. */
+</style>
+
+
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+    <div class="box box4">박스4</div>
+</body>
+</html>

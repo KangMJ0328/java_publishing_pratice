@@ -1,0 +1,144 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style:none;}
+a{text-decoration:none;color:#666;}
+/* 밑줄없애고, 글자색상 회색 */
+
+body{
+    color:#666; 
+}
+
+#wrap{
+    width:1200px;
+    height:700px;
+    margin:0 auto;/*중앙정렬*/
+}
+header{
+    width:100%;
+    height:100px;
+    background-color:pink;
+    position: relative;
+}
+header h1.logo{
+    float:left;
+}
+header nav{
+    /* float: right; */
+    width:600px;
+    height:50px;
+    right:25px;
+    top:25px;
+    position: absolute;
+    /* margin-top: 25px;
+    margin-right: 25px; */
+    background-color: yellow;
+}
+header nav ul{}
+
+nav>ul>li{
+    float: left;
+    width:150px;/*width:25%; */
+    height:50px;
+    text-align:center;
+    line-height:50px;
+   
+}
+nav ul li{
+    width:150px;
+}
+nav ul a{
+    display: block;
+}
+nav ul li:hover>a{
+   background-color: #666;
+   color:#fff; 
+}
+
+/* header nav > ul > li:hover > a{
+    background-color:#666;
+    color:#fff;
+}
+header nav > ul > li > ul > li > a:hover{
+    background-color:#666;
+    color:#fff;
+} */
+
+
+nav ul li ul{
+    position: absolute;
+    height:230px;
+    display: none;
+    background-color: yellow;
+}
+nav ul li:hover ul{
+    display: block;
+}
+
+
+#img_slide{
+    width:100%;
+    height:300px;
+    background-color:salmon;
+    overflow: hidden;
+}
+#img_slide ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+#img_slide ul li{
+    /* overflow: hidden; */
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+section{
+    height: 200px;
+    background-color: #ccc;
+}
+section article{
+    height: 200px;
+    width:33.33%;
+    float: left;
+}
+section article.notice{
+    background-color:plum;
+}
+section article.banner{
+    background-color:tan;
+}
+section article.icons{
+    background-color:violet;
+}
+
+
+
+
+footer{
+    width:100%;
+    height:100px;
+    background-color:aqua;
+}
+.foot_logo{
+    width:20%;
+    height:100px;
+    float:left;
+    background-color:indianred;
+}
+.foot_menu{
+    width:80%;
+    height:50px;
+    float:left;
+    background-color:lightgreen;
+}
+.foot_copy{
+    width:80%;
+    height:50px;
+    float:left;
+    background-color:orange;
+}

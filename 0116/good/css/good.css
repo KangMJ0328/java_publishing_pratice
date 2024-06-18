@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;}
+
+.cf::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+section{
+    width:1200px;
+    height:1000px;
+    border: 1px solid #333;
+    margin: 0 auto;
+}
+article{
+    padding:20px 0;
+    /* overflow: hidden; */
+    /* 높이를 줘야함 */
+}
+article img{
+	padding-left:30px;
+    /* display: block; */
+}
+article h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+article .left{
+    float: left;
+    width:50%;
+    /* width:calc(50%-2px);
+    border: 1px solid #333; */
+}
+article .right{
+	float:left;
+	width:50%;
+}
+
+
+article .left1{
+    float: right;
+    width:50%;
+}
+article .right1{
+	float:left;
+	width:50%;
+}
+article p{
+    padding: 30px;
+    text-align: justify;
+}
+.detail{
+    float: left;
+    padding: 0;
+    margin-left:30px;
+	margin-top:20px;
+}
+.detail a{
+    display:block;
+	padding:15px 30px;
+	border:1px solid #333;
+}
+.detail a:hover{
+	background-color:#333;
+	color:#fff;
+}

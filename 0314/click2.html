@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body3</title>
+</head>
+<body>
+    <div id="app">
+        <h2>0</h2>
+        <button id="increaseBtn">+</button>
+    </div>
+
+    <script>
+        document.getElementById('increaseBtn').addEventListener('click', onIncrease);
+
+        var count = 0;
+
+        function onIncrease() {
+            count += 1;
+            render();
+        }
+
+        function render() {
+            var countElement = document.querySelector('h2');
+            countElement.textContent = count;
+        }
+    </script>
+</body>
+</html>

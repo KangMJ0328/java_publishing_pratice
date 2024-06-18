@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+<style>
+    *{margin: 0;padding: 0;}
+    ul,li{
+        list-style: none;
+    }
+    a{text-decoration: none;}
+    .top_logo{
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 102;
+    }
+    .menu{
+        position: absolute;
+        position: fixed;
+        top: 60px;
+        left: 130px;
+        z-index: 101;
+    }
+    .menu li{
+        float: left;
+        margin-left: 20px;
+    }
+    .menu li a{
+        font-size: 20px;
+        color: #000;
+    }
+    .menu ul li a.active{
+        color: #87ceeb;
+    }
+    #wrap{
+    width:10000px;
+    height:100%;
+    }
+    #wrap > div{
+    position: absolute;
+    padding-top: 150px;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    top:0;
+    opacity: 1;
+    } 
+    #wrap > div:nth-child(1){left:0;background:yellow;}
+    #wrap > div:nth-child(2){left:100%;background:green;}
+    #wrap > div:nth-child(3){left:200%;background:blue;}
+    #wrap > div:nth-child(4){left:300%;background:red;}
+</style>
+<script>
+    $(function(){
+        var a0= $('#wrap > div').eq(0).offset().left;
+        var a1= $('#wrap > div').eq(1).offset().left;
+        var a2= $('#wrap > div').eq(2).offset().left;
+        var a3= $('#wrap > div').eq(3).offset().left;
+
+        $(window).scroll(function(){
+            var sct = $(this).scrollLeft();
+                    for(var e = 0;e<4;e++){
+                        if(sct>=$('#wrap > div').eq(e).offset().left &&
+                         sct<$('#wrap > div').eq(e+1).offset().left){
+                            $('.menu li a').removeClass('active');
+                            $('.menu li a').eq(e).addClass('active');
+                            }
+                        };
+                
+            }
+        );
+        $('.menu li').click(function(){
+            var i = $(this).index();
+
+            var offset_t = $('#wrap > div').eq(i).offset().left;
+
+            $('html,body').stop().animate({scrollLeft:offset_t},1300);
+
+            return false;
+        });
+        $('#wrap > div').mousewheel(function(event,d){
+            if(d>0){
+                var prev =$(this).prev().offset().left;
+                $('html,body').stop().animate({scrollLeft:prev},1000,'easeOutBounce')
+            }
+            if(d<0){
+                var next =$(this).next().offset().left;
+                $('html,body').stop().animate({scrollLeft:next},1000,'easeOutBounce')
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    <header>
+        <a href="#" class="top_logo">
+            <img src="img/logo2.png" width="130" height="130" alt="">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="active">MOBILE</a></li>
+                <li><a href="#">MAIN</a></li>
+                <li><a href="#">WEB</a></li>
+                <li><a href="#">PROFILE</a></li>
+            </ul>
+        </div>
+    </header>    
+    <div id="wrap">
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+    </div>
+</body>
+</html>

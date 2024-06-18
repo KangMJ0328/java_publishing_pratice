@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if ~else if else</title>
+</head>
+<body>
+    <script>
+   var areaNum;    
+   var myArea = prompt("지역을 입력하세요","서울");
+   switch(myArea){
+        case "서울": //myArea에 값이 “서울”인 경우
+                areaNum="02";
+                break;
+        case "경기":        //myArea에 값이 “경기”인 경우
+				areaNum="031";
+				break;
+		case "부산":        //myArea에 값이 “부산”인 경우
+				areaNum="051";
+				break;
+        default:           //myArea에 값이 “서울”인 경우
+				alert("등록되지 않은 지역입니다")
+   }
+   document.write(myArea+"지역번호는 "+areaNum);
+
+    </script>
+</body>
+</html>

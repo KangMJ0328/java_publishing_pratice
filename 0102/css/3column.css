@@ -1,0 +1,40 @@
+* {  
+    margin:0;  /* 브라우저 기본 마진 리셋 */
+    padding:0;  /* 브라우저 기본 패딩 리셋 */
+    box-sizing: border-box;  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+  }
+  #container {
+    width:1200px;   /* 내용 전체의 너비 */
+    margin:20px auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+  }
+  #header{
+    width:1200px;
+    height:120px;
+    background-color: aqua;
+  }
+#left-sidebar{
+    width:250px;
+    height:600px;
+    background-color: burlywood;
+    float:left;
+}
+#contents{
+    width:800px;
+    height:600px;
+    background-color: #ccc;
+    float: left;
+}
+
+#right-sidebar{
+    width:150px;
+    height:600px;
+    background-color: coral;
+    float:left;
+}
+
+#footer {
+    width:100%;  /* 부모 요소의 너비와 똑같게  */
+    height:100px;  /* 푸터의 높이 */
+    background-color:#888888;
+    clear:left;		/* 플로팅 해제 */
+  }
